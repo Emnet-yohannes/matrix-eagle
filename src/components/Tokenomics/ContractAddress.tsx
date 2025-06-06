@@ -36,7 +36,7 @@ export const ContractAddress: React.FC<ContractAddressProps> = ({
                 src={copyIconSrc} 
                 alt={copied ? "Copied!" : "Copy address"}
                 onClick={handleCopy}
-                className="ml-3 object-contain shrink-0 mt-1.5 aspect-square w-[20px] md:w-[33px] cursor-pointer transition-all"
+                className="ml-3 object-contain shrink-0 aspect-square w-[20px]  2xl:w-[33px] cursor-pointer transition-all"
               />
             )}
           </div>
