@@ -3,7 +3,7 @@ import { RocketIcon } from "../icons/RocketIcon";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative mx-auto mt-9 mb-0 w-full  max-md:px-5 max-md:py-0 max-md:mt-12">
+    <section className="relative mx-auto mt-9 mb-0 w-full  max-md:px-5 max-md:py-0 2xl:mt-22">
       <h1 className="mx-auto mt-0 mb-11 w-full text-3xl 2xl:text-5xl font-bold tracking-wide text-center text-white leading-[72px] max-w-[1028px] max-md:mb-8 max-md:text-4xl max-md:leading-[54px] max-sm:mb-6 max-sm:text-3xl max-sm:leading-10">
         Revolutionizing Food Production Through Blockchain Innovation
       </h1>
@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
         value of each token but also aligns investor interests with the
         long-term viability and ethical integrity of our operations.
       </p>
-      <div className=" flex gap-20 justify-center mb-8 2xl:mb-20 max-md:flex-col max-md:gap-5 max-md:items-center max-md:mb-12">
+      <div className=" flex gap-20 justify-center mb-8 2xl:mb-7 max-md:flex-col max-md:gap-5 max-md:items-center ">
         <a
           href="#whitepaper"
           className="relative w-44 rounded-2xl shadow-md cursor-pointer bg-gradient-to-r from-[#F6B387] to-[#F0B90BB2] bg-opacity-0 h-[50px] max-sm:h-11 max-sm:w-[150px] group"

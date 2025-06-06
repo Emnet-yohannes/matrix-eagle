@@ -6,7 +6,9 @@ export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+  const handleConnectWallet = () =>{
+    console.log('connect wallet');
+  }
   return (
     <header className="relative w-full z-50 ">
       {/* Top Navbar */}
@@ -29,9 +31,9 @@ export const Navbar: React.FC = () => {
         </nav>
         {/* Connect Wallet (Always visible) */}
         <div className="hidden md:block md:ml-4">
-          <div className="text-sm 2xltext-base border-l-4 border-r-4 border-t-4 border-[#FFA100]  rounded-[14px] bg-gradient-to-r from-[#30304E] to-[#27283C] md:w-[170px] h-[45px] flex items-center justify-center cursor-pointer hover:from-[#F0B90BB2] hover:to-[#222222] transition-all duration-300">
+          <button onClick={()=>handleConnectWallet()} className="text-sm 2xltext-base border-l-4 border-r-4 border-t-4 border-[#FFA100]  rounded-[14px] bg-gradient-to-r from-[#30304E] to-[#27283C] md:w-[170px] h-[45px] flex items-center justify-center cursor-pointer hover:from-[#F0B90BB2] hover:to-[#222222] transition-all duration-300">
             Connect Wallet
-          </div>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}

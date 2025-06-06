@@ -19,13 +19,12 @@ export default function LanguageSelector() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="mt-10 2xl:mt-0 relative inline-block text-left">
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#1C1C2E] to-[#2A2B3E] border border-gray-600 rounded-md text-white"
       >
         <img src={selected.flag} alt={selected.label} className="w-5 h-5" />
-        <span className="text-sm">{selected.label}</span>
         <span className="text-sm">{selected.label}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

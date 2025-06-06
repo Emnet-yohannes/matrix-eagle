@@ -33,7 +33,7 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
   tokenSymbol = "ETATA",
   totalTokens = "100,000,000",
   contractAddress = "0x9eAeBd7E73D97E78c77fAB743e6FFA1b550e224c",
-  copyIconSrc = "https://cdn.builder.io/api/v1/image/assets/TEMP/601ba55baac16847ee91427dd65e49a3b713db6a?placeholderIfAbsent=true&apiKey=08ec9622174f40fc85b76eb0d778600b",
+  copyIconSrc = "/copyIcon.svg",
   warningText = "Please note that you should not send any tokens to this address, as doing so may result in the permanent loss of the tokens.",
   distributions = [
     { label: "Private sale", percentage: "5.33%" },
@@ -74,8 +74,8 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
         />
       </div>
 
-      <div className="bg-[url('/herobg3.svg')]  bg-no-repeat bg-[length:100%_auto] bg-[center_140px] w-full flex justify-center">
-        <div className="w-[70%] ">
+      <div className="bg-[url('/herobg3.svg')]  bg-no-repeat bg-[length:100%_auto] bg-[center_140px] 2xl:bg-[center_160px] w-full flex justify-center">
+        <div className="w-[90%] flex flex-col items-center">
           <TokenomicsImage
             src="/tokenomicsImage.svg"
             alt="Tokenomics distribution chart"

@@ -69,11 +69,13 @@ export default function RoadmapTimeline() {
   ];
   return (
     <div>
-      <div className="w-full mt-[152px] mb-[32px] px-2 sm:px-8  ">
-        <div className="text-[#FFA100] text-2xl lg:text-[32px] 2xl:text-[64px] w-full flex justify-center">
-          ROAD MAP
+      <div className="w-full mt-[90px] lg:mt-[152px] 2xl:mt-[256px] mb-[32px] px-2 sm:px-8  ">
+        <div className="text-[#FFA100] font-bold  text-2xl lg:text-[32px] 2xl:text-[64px] w-full flex justify-center">
+          {/* <div className="bg-[#FFA100] px-5 rounded-2xl text-black"> */}
+            ROAD MAP
+          {/* </div> */}
         </div>
-        <div className="flex justify-center text-base lg:text-lg 2xl:text-[64px] text-center">
+        <div className="flex justify-center text-base lg:text-lg 2xl:text-[28px] font-semibold text-center 2xl:mt-10">
           Roadmap outlines the Steps and Process of our tokens and company’s
           project, ensuring the long-term success and stability of the Etata
           project.
@@ -98,11 +100,11 @@ export default function RoadmapTimeline() {
 
               {/* Content */}
               <div className="  md:w-1/2 space-y-2 text-center md:text-left  flex flex-col items-center">
-                <div className="flex w-[70%] flex-col  items-center">
-                  <h3 className="text-xl font-semibold text-[#FFA100] text-center">
+                <div className="flex w-[70%] flex-col  items-center 2xl:text-[28px]">
+                  <h3 className="text-xl font-semibold text-[#FFA100] text-center 2xl:mb-[22px] 2xl:text-[32px]">
                     {phase.title}
                   </h3>
-                  <ul className="list-disc list-inside text-sm text-gray-300">
+                  <ul className="list-disc list-inside text-sm text-gray-300 font-semibold 2xl:text-[28px]">
                     {phase.points.map((point, i) => (
                       <li key={i}>{point}</li>
                     ))}

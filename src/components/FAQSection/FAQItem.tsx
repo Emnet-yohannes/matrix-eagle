@@ -21,7 +21,7 @@ export const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
         onClick={toggleExpanded}
         aria-expanded={isExpanded}
       >
-        <h3 className="flex-1 text-lg 2xltext-3xl tracking-normal leading-10 text-white max-md:text-2xl max-md:leading-9 max-sm:text-lg max-sm:leading-7">
+        <h3 className="flex-1 text-lg 2xl:text-3xl tracking-normal leading-10 text-white max-md:text-2xl max-md:leading-9 max-sm:text-lg max-sm:leading-7">
           {question}
         </h3>
         <div className="flex-shrink-0">

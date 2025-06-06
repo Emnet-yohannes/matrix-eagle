@@ -152,7 +152,7 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           </button>
 
           {/* Help & Error Buttons */}
-          <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between 2xl:mb-16">
             <div className="w-full md:w-[45%] flex justify-center">
               <a
                 href="#how-to-buy"

@@ -39,7 +39,7 @@ const OurValues = () => {
     },
   ];
   return (
-    <div className="bg-[url('/herobg3.svg')] bg-no-repeat bg-[length:100%_auto] bg-[center_-40px] md:bg-[center_-130px] w-full min-h-screen">
+    <div className="bg-[url('/herobg3.svg')] bg-no-repeat bg-[length:100%_auto] bg-[center_-40px] md:bg-[center_-130px] 2xl:bg-[center_-180px] w-full min-h-screen">
 
       <div className="w-full text-center py-[20px] flex justify-center ">
         <p className="bg-[#F6B38732] text-[#FFA100] text-xl md:text-2xl 2xl:text-[38px] py-1 px-4 rounded-[20px]">

@@ -8,7 +8,7 @@ const TechnologyInfrastructure = () => {
       </div>
       <div className="px-3 md:px-0 flex pt-[50px] h-full  md:justify-around flex-col md:flex-row">
         <div className="flex flex-col items-center ">
-          <div className="text-[20px] font-bold  2xl:text-2xl mb-4 md:mb-[30px]">
+          <div className="text-[20px] font-bold  2xl:text-[28px] mb-4 md:mb-[30px]">
             1. Blockchain Platform
           </div>
           <div className="text-sm 2xl:text-[22px] font-normal">
@@ -19,7 +19,7 @@ const TechnologyInfrastructure = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-4 md:mt-0">
-          <div className="text-[20px] font-bold  2xl:text-2xl mb-4 md:mb-[30px] text-center">
+          <div className="text-[20px] font-bold  2xl:text-[28px] mb-4 md:mb-[30px] text-center">
             2. Security and Technical Architecture
           </div>
           <div className="text-sm 2xl:text-[22px] font-normal ">

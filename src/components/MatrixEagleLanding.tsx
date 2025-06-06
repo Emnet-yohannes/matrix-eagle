@@ -45,6 +45,9 @@ export const MatrixEagleLanding: React.FC = () => {
       <RoadmapTimeline />
 
       {/* Footer Section */}
+      <div>
+        
+      </div>
       <KeyObjectives />
       <FAQSection />
       <Footer />

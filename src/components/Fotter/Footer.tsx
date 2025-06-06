@@ -8,7 +8,7 @@ import LanguageSelector from './languageSelector';
 export const Footer: React.FC = () => {
   return (
     <footer className="relative mt-20 w-full">
-      <div className="relative w-full h-[289px]">
+      <div className="relative w-full h-auto lg:h-[289px]">
         <img
             src={Logo}
           className="absolute left-0 h-[121px] top-[168px] w-[131px] max-sm:block max-sm:relative max-sm:top-auto max-sm:left-auto max-sm:mx-auto max-sm:my-5 max-sm:h-[92px] max-sm:w-[100px]"
@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
         </div>
-        <div className=" flex absolute bottom-0 pb-2 right-0 justify-center items-center h-8 w-[173px] max-md:relative max-md:top-auto max-md:right-auto max-md:mx-auto max-md:mt-5 max-md:mb-0 max-sm:mx-auto max-sm:mt-4 max-sm:mb-0">
+        <div className="flex pb-10 pt-4 absolute bottom-0 lg:bottom-4 right-0 justify-center items-center h-8 w-[173px] max-md:relative max-md:top-auto max-md:right-auto max-md:mx-auto max-md:mt-5 max-md:mb-0 max-sm:mx-auto max-sm:mt-4 max-sm:mb-0">
             <LanguageSelector /> 
         </div>
       </div>

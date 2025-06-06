@@ -41,7 +41,7 @@ export const PartnersSection: React.FC = () => {
 
   return (
     <section className="relative w-full mt-[68px]">
-      <div className="max-sm:text-lg lg:text-2xl mb-[44px]  w-full text-center">
+      <div className="text-lg lg:text-xl 2xl:text-2xl mb-[44px]  w-full text-center font-medium text-white">
         Featured In
       </div>
 
@@ -49,7 +49,7 @@ export const PartnersSection: React.FC = () => {
       <div >
         {/* Ticker at the bottom of the screen */}
         <div className=" w-full  overflow-hidden z-50 mb-3">
-          <div className="flex space-x-6 animate-scroll items-center">
+          <div className="flex justify-center space-x-6 animate-scroll items-center">
             {partners.map((partner, index) => (
               <div
                 key={index}
