@@ -17,7 +17,7 @@ interface PresaleWidgetProps {
 }
 
 export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
-  tokenName,
+  // tokenName,
   tokenSymbol,
   launchPrice,
   presalePrice,

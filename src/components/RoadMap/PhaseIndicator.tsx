@@ -1,11 +1,20 @@
-import * as React from "react";
-
-interface PhaseIndicatorProps {
-  className?: string;
+"use client";
+interface RoadmapIntroProps {
+  title: string;
+  description: string;
 }
 
-export function PhaseIndicator({ className = "" }: PhaseIndicatorProps) {
+function RoadmapIntro({ title, description }: RoadmapIntroProps) {
   return (
-    <div className={`flex shrink-0 bg-yellow-500 rounded-full h-[30px] w-[30px] ${className}`} />
+    <header className="flex relative flex-col items-center mb-0 max-md:mb-2.5 max-md:max-w-full">
+      <h1 className="text-6xl font-bold text-amber-500 max-md:text-4xl">
+        {title}
+      </h1>
+      <p className="mt-8 text-3xl font-semibold text-center text-white max-md:max-w-full">
+        {description}
+      </p>
+    </header>
   );
 }
+
+export default RoadmapIntro;

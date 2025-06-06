@@ -1,4 +1,3 @@
-import * as React from "react";
 
 interface PhaseImageProps {
   src: string;

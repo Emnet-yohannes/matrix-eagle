@@ -1,8 +1,6 @@
-import * as React from "react";
-import { PhaseIndicator } from "./PhaseIndicator";
-import { PhaseImage } from "./PhaseImage";
-import { PhaseContent } from "./PhaseContent";
 
+// import { PhaseIndicator } from "./PhaseIndicator";
+import { PhaseImage } from "./PhaseImage";
 interface PhaseSectionProps {
   title: string;
   description?: string;
@@ -47,7 +45,7 @@ export function PhaseSection({
                     {title}
                   </h2>
                 )}
-                <PhaseIndicator className={isImageLeft ? "self-start" : "self-start"} />
+                {/* <PhaseIndicator /> */}
                 {isImageLeft && (
                   <h2 className="flex-auto max-md:max-w-full">
                     {title}

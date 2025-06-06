@@ -1,8 +1,4 @@
 "use client";
-import * as React from "react";
-import { PhaseSection } from "./PhaseSection";
-import { PhaseIndicator } from "./PhaseIndicator";
-import { PhaseImage } from "./PhaseImage";
 
 export default function RoadmapTimeline() {
   const roadmapData = [
