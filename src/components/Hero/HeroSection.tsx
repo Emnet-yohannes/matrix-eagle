@@ -31,13 +31,13 @@ export const HeroSection: React.FC = () => {
         value of each token but also aligns investor interests with the
         long-term viability and ethical integrity of our operations.
       </p>
-      <div className=" flex gap-20 justify-center mb-8 2xl:mb-7 max-md:flex-col max-md:gap-5 max-md:items-center ">
+      <div className="flex gap-20 justify-center mb-8 2xl:mb-7  max-md:gap-5 max-md:items-center ">
         <a
           href="#whitepaper"
           className="relative w-44 rounded-2xl shadow-md cursor-pointer bg-gradient-to-r from-[#F6B387] to-[#F0B90BB2] bg-opacity-0 h-[50px] max-sm:h-11 max-sm:w-[150px] group"
         >
-          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px] w-[282px]" />
-          <div className="flex absolute justify-center items-center h-10 rounded-2xl shadow-2xl left-[3px] top-[5px] w-[170px] max-sm:w-36 max-sm:h-9">
+          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px]" />
+          <div className="flex absolute justify-center items-center h-10 rounded-2xl shadow-2xl left-[3px] top-[5px]  w-[170px] max-sm:w-36 max-sm:h-9">
             <div className="flex absolute left-0 -top-0.5 justify-center items-center py-2.5 pr-5 pl-5 rounded-2xl h-[45px] w-[170px] max-sm:px-5 max-sm:py-2 max-sm:w-36 max-sm:h-10 bg-gradient-to-r from-[#455666] to-[#222222] group-hover:from-[#F0B90BB2] group-hover:to-[#222222] transition-all duration-300">
               <div className="flex absolute top-2.5 gap-1.5 justify-center items-start h-[25px] left-[22px] w-[126px] max-sm:top-2 max-sm:left-[18px] max-sm:w-[108px]">
                 <RocketIcon className="w-6 h-6 flex-shrink-0" />
@@ -53,7 +53,7 @@ export const HeroSection: React.FC = () => {
           href="#invest"
           className="relative w-44 rounded-2xl shadow-md cursor-pointer bg-gradient-to-r from-[#F6B387] to-[#F0B90BB2] bg-opacity-0 h-[50px] max-sm:h-11 max-sm:w-[150px] group"
         >
-          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px] w-[282px]" />
+          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px] " />
           <div className="flex absolute justify-center items-center h-10 rounded-2xl shadow-2xl left-[3px] top-[5px] w-[170px] max-sm:w-36 max-sm:h-9">
               <div className="flex absolute left-0 -top-0.5 justify-center items-center py-2.5 pr-5 pl-5 rounded-2xl h-[45px] w-[170px] max-sm:px-5 max-sm:py-2 max-sm:w-36 max-sm:h-10 bg-gradient-to-r from-[#455666] to-[#222222] group-hover:from-[#F0B90BB2] group-hover:to-[#222222] transition-all duration-300">
               <div className="flex absolute top-2.5 gap-1.5 justify-center items-start h-[25px] left-[22px] w-[126px] max-sm:top-2 max-sm:left-[18px] max-sm:w-[108px]">

@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
 
           <SocialIcons />
 
-          <nav className="flex relative gap-6 justify-center items-center mx-auto mt-6 mb-0 h-[45px] w-[774px] max-md:flex-wrap max-md:gap-4 max-md:w-full max-sm:flex-col max-sm:gap-3 max-sm:mx-auto max-sm:mt-5 max-sm:mb-0 max-sm:h-auto">
+          <nav className="flex relative gap-6 justify-center items-center mx-auto mt-6 mb-0 h-[45px] w-[774px] max-md:flex-wrap max-md:gap-4 max-md:w-full  max-sm:gap-3 max-sm:mx-auto max-sm:mt-5 max-sm:mb-0 max-sm:h-auto">
             <a
               href="#"
               className="text-sm font-bold tracking-normal leading-5 text-[#FFA100] hover:text-text-[#FFA100] transition-colors"

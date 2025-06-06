@@ -104,7 +104,7 @@ export default function RoadmapTimeline() {
                   <h3 className="text-xl font-semibold text-[#FFA100] text-center 2xl:mb-[22px] 2xl:text-[32px]">
                     {phase.title}
                   </h3>
-                  <ul className="list-disc list-inside text-sm text-gray-300 font-semibold 2xl:text-[28px]">
+                  <ul className="[&>li]:pl-5 [&>li]:-indent-5 list-disc text-left list-disc list-inside text-sm text-gray-300 font-semibold 2xl:text-[28px]">
                     {phase.points.map((point, i) => (
                       <li key={i}>{point}</li>
                     ))}

@@ -45,20 +45,20 @@ export const PartnersSection: React.FC = () => {
         Featured In
       </div>
 
-      
-      <div >
+      <div>
         {/* Ticker at the bottom of the screen */}
-        <div className=" w-full  overflow-hidden z-50 mb-3">
-          <div className="flex justify-center space-x-6 animate-scroll items-center">
-            {partners.map((partner, index) => (
+
+        <div className="w-full overflow-hidden z-50 mb-3">
+          <div className="ticker-track space-x-6 items-center">
+            {[...partners, ...partners].map((partner, index) => (
               <div
                 key={index}
                 className="flex items-center md:space-x-3 text-white text-sm md:px-4 md:py-2"
               >
                 <img
-                  key={index}
                   src={partner.src}
                   alt={partner.alt}
+                  className="h-6 md:h-8"
                 />
               </div>
             ))}
