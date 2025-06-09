@@ -17,7 +17,6 @@ interface PresaleWidgetProps {
 }
 
 export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
-  // tokenName,
   tokenSymbol,
   launchPrice,
   presalePrice,
@@ -41,6 +40,10 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
   const handleMaxClick = () => {
     handleEthAmountChange("1.5");
   };
+
+  const handleConnectWallet = () => {
+    console.log('connect wallet')
+  }
 
   const progressPercent = Math.min((raisedAmount / goalAmount) * 100, 100).toFixed(2);
 
@@ -91,7 +94,7 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
               <button
                 key={currency}
                 onClick={() => setSelectedCurrency(currency as "ETH" | "USDT")}
-                className={`flex justify-center items-center h-11 rounded-xl border-2 px-8 transition-all w-full ${
+                className={`cursor-pointer flex justify-center items-center h-11 rounded-xl border-2 px-8 transition-all w-full ${
                   selectedCurrency === currency
                     ? currency === "ETH"
                       ? "border-white bg-[#F6B387]"
@@ -147,7 +150,7 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           </div>
 
           {/* Connect Wallet */}
-          <button className="w-full h-12 rounded-2xl border-2 border-white bg-gradient-to-r from-[#FFA100] to-[#F6B387] text-[#1B1C22] font-bold text-sm 2xltext-lg mb-6">
+          <button onClick={handleConnectWallet} className="cursor-pointer w-full h-12 rounded-2xl border-2 border-white bg-gradient-to-r from-[#FFA100] to-[#F6B387] text-[#1B1C22] font-bold text-sm 2xltext-lg mb-6">
             Connect Wallet
           </button>
 

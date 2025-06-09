@@ -2,12 +2,9 @@ import * as React from "react";
 import { Navbar } from "./Navbar/Navbar";
 import { HeroSection } from "./Hero/HeroSection";
 import { PresaleWidget } from "./PresaleWidget";
-// import { PartnersSection } from "./PartnersSection";
-// import FeatureAndStability from "./StabilityGrowth/StabilityGrowth";
-// import TechnologyInfrastructure from "./TechnologyInfrastructure/TechnologyInfrastructure";
 import OurValues from "./OurValues/OurValues";
 import RoadmapTimeline from "./RoadMap/RoadmapTimeline";
-import { AgricultureProblemAndSolution } from "./KeyObjectives/AgricultureProblemAndSolution";
+import { AgricultureProblemAndSolution } from "./AgricultureProblemAndSolution/AgricultureProblemAndSolution";
 import { FAQSection } from "./FAQSection/FAQSection";
 import { Footer } from "./Fotter/Footer";
 import TokenomicsSection from "./Tokenomics/TokenomicsSection";
@@ -17,7 +14,7 @@ import TeamAndAdvisors from "./TeamAndAdvisor/TeamAndAdvisors";
 export const MatrixEagleLanding: React.FC = () => {
   return (
     <div className="w-full">
-      {/* Hero Section with background */}
+      {/* Hero Section with background Image*/}
       <div className="w-full bg-[url('/herobg1.svg')] bg-contain bg-no-repeat ">
         <Navbar />
         <div className="flex items-center justify-center">
@@ -37,20 +34,11 @@ export const MatrixEagleLanding: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Main Sections */}
-      {/* <PartnersSection /> */}
-      {/* <FeatureAndStability /> */}
-      {/* <TechnologyInfrastructure /> */}
       <Vision />
       <OurValues />
       <TokenomicsSection />
       <RoadmapTimeline />
-
       {/* Footer Section */}
-      <div>
-        
-      </div>
       <AgricultureProblemAndSolution />
       <TeamAndAdvisors />
       <FAQSection />

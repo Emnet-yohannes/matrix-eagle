@@ -31,9 +31,6 @@ export const HeroSection: React.FC = () => {
           </div>
         </button>
       </div>
-      {/* <h2 className="mx-auto mt-0 mb-[43px] w-full text-3xl 2xl:text-5xl font-bold tracking-wide text-center text-white leading-[72px] max-w-[608px]  max-md:text-4xl max-md:leading-[54px]  max-sm:text-3xl max-sm:leading-10">
-        Introducing Etata Token
-      </h2> */}
       <div>
 
       <p className="2xl:text-[22px] mx-auto mt-0 mb-7 2xl:mb-8 w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px]  max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5">
