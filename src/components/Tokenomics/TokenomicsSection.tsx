@@ -5,8 +5,6 @@ import { BasicTokenInfo } from "./BasicTokenInfo";
 import { ContractAddress } from "./ContractAddress";
 import { TokenDistribution } from "./TokenDistribution";
 import { TokenomicsImage } from "./TokenomicsImage";
-import { JourneySection } from "./JourneySection";
-import { CompanyTagline } from "./CompanyTagline";
 import { TotalSupply } from "./TotalSupply";
 
 interface TokenomicsSectionProps {

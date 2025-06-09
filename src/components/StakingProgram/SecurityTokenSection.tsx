@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import { SecurityCard } from "./SecurityCard";
-import { ProgramTitle } from "./ProgramTitle";
 
 export const SecurityTokenSection: React.FC = () => {
   return (

@@ -1,6 +1,4 @@
 "use client";
-import * as React from "react";
-
 interface TeamMemberProps {
   imageUrl: string;
   role: string;
