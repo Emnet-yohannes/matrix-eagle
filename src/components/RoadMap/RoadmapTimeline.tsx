@@ -3,82 +3,51 @@
 export default function RoadmapTimeline() {
   const roadmapData = [
     {
-      title: "Phase 1: Technical and Legal Preparation (Q2 2025)",
+      title: "Q1 2025:",
       points: [
-        "Technical architecture",
-        "Smart contract development",
-        "Legal framework for decentralization and governance",
-        "Simulation/profile breakdown",
+        "Build the platform design and tokenomics",
+        "Recruit the core team",
       ],
-      image:
-        "/phase2.png",
+      image: "/phase2.png",
     },
     {
-      title: "Phase 2: Community Building and Education (Q3-Q4 2025)",
+      title: "Q2 2025:",
       points: [
-        "Ambassador & reward campaigns",
-        "Content creation, education, workshops",
-        "Establishing multilingual communities",
-        "Community-led initiatives and incentives",
+        "Launch presale of Etata token",
+        "Begin marketing and community efforts",
+        "Onboard initial farm partners",
       ],
-      image:
-        "/phase1.png",
+      image: "/phase1.png",
     },
     {
-      title: "Phase 3: Token Issuance and Fundraising (Q3-Q4 2025)",
+      title: "Q3 2025:",
       points: [
-        "Utility token $FARM",
-        "$FARM Private Sale & Fundraising for DAO in multiple tranches",
-        "Establishing initial DAO treasury",
-        "Token listing on DEXs",
+        "Launch staking program",
+        "Enable mobile wallet integration",
+        "Expand Telegram and support channels",
       ],
-      image:
-        "/phase3.png",
+      image: "/phase3.png",
     },
     {
-      title:
-        "Phase 4: Activation of Investment Programs (Productive Staking) (Q4 2025 - Q1 2026)",
+      title: "Q4 2025:",
       points: [
-        "Following $FARM listing – deploy core farming society features",
-        "Land registry, staking, governance, on-chain reputation",
-        "Expansion of farming assets and partner projects",
+        "Launch STO for equity-based investments",
+        "Strengthen platform features and UI",
+        "Begin outreach for global strategic partnerships",
       ],
-      image:
-        "/phase4.png",
-    },
-    {
-      title: "Phase 5: Traceability and Automation with Oracles (Q1 2026)",
-      points: [
-        "Use of simulation and research",
-        "Biological protocol integrations",
-        "DeSci partners and knowledge translation pipelines",
-      ],
-      image:
-        "/phase5.png",
-    },
-    {
-      title: "Phase 6: Ecosystem Consolidation and Expansion (Q2 2026 onwards)",
-      points: [
-        "Ongoing token incentives",
-        "Private/public partnerships and stablecoin integrations",
-        "New market expansion",
-      ],
-      image:
-        "/phase6.png",
+      image: "/phase4.png",
     },
   ];
   return (
     <div>
-      <div className="w-full mt-[90px] lg:mt-[152px] 2xl:mt-[256px] mb-[32px] px-2 sm:px-8  ">
+      <div className="w-full mt-[90px] lg:mt-[152px] 2xl:mt-[143px] mb-[32px] px-2 sm:px-8  ">
         <div className="text-[#FFA100] font-bold  text-2xl lg:text-[32px] 2xl:text-[64px] w-full flex justify-center">
           {/* <div className="bg-[#FFA100] px-5 rounded-2xl text-black"> */}
-            ROAD MAP
+          ROAD MAP
           {/* </div> */}
         </div>
         <div className="flex justify-center text-base lg:text-lg 2xl:text-[28px] font-semibold text-center 2xl:mt-10">
-          Roadmap outlines the Steps and Process of our tokens and company’s
-          project, ensuring the long-term success and stability of the Etata
-          project.
+          The roadmap outlines our project milestones and future goals
         </div>
       </div>
       <div className="relative w-full  py-10 text-white">
@@ -126,6 +95,18 @@ export default function RoadmapTimeline() {
           ))}
         </div>
       </div>
+      <div className="flex justify-center mt-8">
+        <div className="w-full md:w-[50%] text-center text-sm lg:text-lg px-2 md:px-0">
+          This roadmap provides a clear step-by-step plan for building and
+          growing the project. It starts with setting up the foundation,
+          platform design, team, and tokenomics and moves toward launching the
+          presale, marketing, and farming partnerships. <br />
+          Each quarter focuses on real progress like launching staking,
+          expanding features, and growing community reach. By following this
+          timeline, Matrix Eagle can grow steadily and build trust with
+          investors. It shows we have a clear vision and are ready to deliver.
+        </div>
+      </div>
     </div>
-  );
+  )
 }

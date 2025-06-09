@@ -81,12 +81,15 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
             alt="Tokenomics distribution chart"
           />
 
-          <JourneySection
+          {/* <JourneySection
             heading="Join Us on Our Journey to Sustainable Prosperity"
             description="With Etata, investors are not just purchasing a token; they are funding a future. A future where food production is not only a means to an end but a pathway to a more sustainable and inclusive world. We invite you to join us in this revolutionary venture, where your investment goes beyond the financial to sow seeds of change in communities and industries worldwide. Transform the way the world thinks about food production, one token at a time."
           />
           <div className="flex justify-center">
             <CompanyTagline tagline="Matrix Eagle | Etata: Nourishing Bodies, Empowering Communities, Enriching Investors." />
+          </div> */}
+          <div className=" pb-6">
+            <img src={"/Tea.png"} alt={"tea"} />
           </div>
         </div>
       </div>

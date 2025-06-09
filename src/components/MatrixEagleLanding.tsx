@@ -2,15 +2,17 @@ import * as React from "react";
 import { Navbar } from "./Navbar/Navbar";
 import { HeroSection } from "./Hero/HeroSection";
 import { PresaleWidget } from "./PresaleWidget";
-import { PartnersSection } from "./PartnersSection";
-import FeatureAndStability from "./StabilityGrowth/StabilityGrowth";
-import TechnologyInfrastructure from "./TechnologyInfrastructure/TechnologyInfrastructure";
+// import { PartnersSection } from "./PartnersSection";
+// import FeatureAndStability from "./StabilityGrowth/StabilityGrowth";
+// import TechnologyInfrastructure from "./TechnologyInfrastructure/TechnologyInfrastructure";
 import OurValues from "./OurValues/OurValues";
 import RoadmapTimeline from "./RoadMap/RoadmapTimeline";
-import { KeyObjectives } from "./KeyObjectives/KeyObjectives";
+import { AgricultureProblemAndSolution } from "./KeyObjectives/AgricultureProblemAndSolution";
 import { FAQSection } from "./FAQSection/FAQSection";
 import { Footer } from "./Fotter/Footer";
 import TokenomicsSection from "./Tokenomics/TokenomicsSection";
+import Vision from "./VisionAndMission/VisionAndMission";
+import TeamAndAdvisors from "./TeamAndAdvisor/TeamAndAdvisors";
 
 export const MatrixEagleLanding: React.FC = () => {
   return (
@@ -37,9 +39,10 @@ export const MatrixEagleLanding: React.FC = () => {
       </div>
 
       {/* Main Sections */}
-      <PartnersSection />
-      <FeatureAndStability />
-      <TechnologyInfrastructure />
+      {/* <PartnersSection /> */}
+      {/* <FeatureAndStability /> */}
+      {/* <TechnologyInfrastructure /> */}
+      <Vision />
       <OurValues />
       <TokenomicsSection />
       <RoadmapTimeline />
@@ -48,7 +51,8 @@ export const MatrixEagleLanding: React.FC = () => {
       <div>
         
       </div>
-      <KeyObjectives />
+      <AgricultureProblemAndSolution />
+      <TeamAndAdvisors />
       <FAQSection />
       <Footer />
     </div>

@@ -45,7 +45,7 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
   const progressPercent = Math.min((raisedAmount / goalAmount) * 100, 100).toFixed(2);
 
   return (
-    <div className="max-md:px-3">
+    <div className="max-md:px-3 mb-7 2xl:mb-10">
       <div className="w-full md:max-w-[590px] mx-auto bg-[#F6B387]  rounded-3xl p-1 md:p-2">
         <div className="w-full border border-zinc-800 bg-gradient-to-b from-[#414247] to-[#1B1D23] bg-gray-800/95 rounded-2xl p-6 md:py-10 md:px-12">
           <div className="text-center mb-6">
@@ -72,13 +72,13 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           {/* Raised Info */}
           <div className="text-center text-white text-base 2xltext-lg mb-6">
             <p>
-              USD Raised:{" "}
+              Fundraising Goal:{" "}
               <span className="text-[#FFA100]">
                 ${raisedAmount.toLocaleString()} / ${goalAmount.toLocaleString()}
               </span>
             </p>
             <p>
-              Tokens Sold:{" "}
+              Total Token Supply:{" "}
               <span className="text-[#FFA100]">
                 {soldTokens.toLocaleString()} / {totalTokens.toLocaleString()}
               </span>

@@ -1,70 +1,77 @@
 import * as React from "react";
-import { RocketIcon } from "../icons/RocketIcon";
+// import { RocketIcon } from "../icons/RocketIcon";
 
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative mx-auto mt-9 mb-0 w-full  max-md:px-5 max-md:py-0 2xl:mt-22">
       <h1 className="mx-auto mt-0 mb-11 w-full text-3xl 2xl:text-5xl font-bold tracking-wide text-center text-white leading-[72px] max-w-[1028px] max-md:mb-8 max-md:text-4xl max-md:leading-[54px] max-sm:mb-6 max-sm:text-3xl max-sm:leading-10">
-        Revolutionizing Food Production Through Blockchain Innovation
+        Empowering Agriculture Through Blockchain Innovation
       </h1>
-      <p className="mx-auto mt-0 mb-[44px] w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px] max-md:mb-24 max-md:text-sm max-md:leading-5 max-sm:mb-20 max-sm:text-sm max-sm:leading-5">
-        Revolutionizing Food Production Through Blockchain Innovation In a world
-        where technology meets tradition, Matrix Eagle stands as a beacon of
-        progress and sustainability. Partnering with Puro Finca and Essentium
-        Labs, Matrix Eagle is pioneering a transformative approach to food
-        production through the power of tokenization. Our mission is rooted in
-        sustainability, community empowerment, and technological advancement,
-        striving to redefine the narrative of prosperity across global
-        agricultural practices.
-      </p>
-      <h2 className="mx-auto mt-0 mb-[43px] w-full text-3xl 2xl:text-5xl font-bold tracking-wide text-center text-white leading-[72px] max-w-[608px]  max-md:text-4xl max-md:leading-[54px]  max-sm:text-3xl max-sm:leading-10">
-        Introducing Etata Token
-      </h2>
-      <p className="mx-auto mt-0 mb-15 2xl:mb-28 w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px]  max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5">
-        At the heart of our operation lies the Etata token, a dynamic blockchain
-        innovation designed to fund and facilitate the scalable and sustainable
-        production of sweet potatoes in Colombia. This token represents more
-        than just a financial instrument; it embodies our commitment to
-        eco-friendly practices and community growth. Each Etata token is backed
-        by real-world assets (RWA) — the tangible hectares of sweet potatoes
-        cultivated under our care. This backing not only assures the intrinsic
-        value of each token but also aligns investor interests with the
-        long-term viability and ethical integrity of our operations.
+      <p className="mx-auto mt-0 mb-[44px] w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px] max-md:mb-24 max-md:text-sm max-md:leading-5 max-sm:mb-20 max-sm:text-sm max-sm:leading-5 2xl:text-[22px]">
+        Matrix Eagle is a blockchain-based platform built to transform and
+        support agriculture in Latin America, starting in Colombia. <br /> We
+        aim to connect global investors with real agricultural projects through
+        smart contracts, secure blockchain technology, and utility tokens. With
+        this platform, we make it easier, safer, and more transparent to invest
+        in agriculture while giving farmers reliable access to funding and
+        resources to help their land and communities grow.
       </p>
       <div className="flex gap-20 justify-center mb-8 2xl:mb-7  max-md:gap-5 max-md:items-center ">
-        <a
-          href="#whitepaper"
-          className="relative w-44 rounded-2xl shadow-md cursor-pointer bg-gradient-to-r from-[#F6B387] to-[#F0B90BB2] bg-opacity-0 h-[50px] max-sm:h-11 max-sm:w-[150px] group"
+        <button
+          className="w-[271px] h-[68px] relative overflow-hidden rounded-[14px] bg-radial from-[#FFDF00] from-0% to-[#FFA100] bg-opacity-0"
+          style={{
+            background:
+              "linear-gradient(26.6deg, #30304e -3%, #27283c 65.14%);",
+          }}
         >
-          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px]" />
-          <div className="flex absolute justify-center items-center h-10 rounded-2xl shadow-2xl left-[3px] top-[5px]  w-[170px] max-sm:w-36 max-sm:h-9">
-            <div className="flex absolute left-0 -top-0.5 justify-center items-center py-2.5 pr-5 pl-5 rounded-2xl h-[45px] w-[170px] max-sm:px-5 max-sm:py-2 max-sm:w-36 max-sm:h-10 bg-gradient-to-r from-[#455666] to-[#222222] group-hover:from-[#F0B90BB2] group-hover:to-[#222222] transition-all duration-300">
-              <div className="flex absolute top-2.5 gap-1.5 justify-center items-start h-[25px] left-[22px] w-[126px] max-sm:top-2 max-sm:left-[18px] max-sm:w-[108px]">
-                <RocketIcon className="w-6 h-6 flex-shrink-0" />
-                <span className="text-sm lg:text-base tracking-normal leading-6 text-center text-white h-[23px] w-[97px] max-sm:w-20 ">
-                  Whitepaper
-                </span>
-              </div>
-            </div>
+          <div className="w-[271px] h-[68px] absolute left-0 top-0 rounded-[14px]">
+            <p className="w-56 h-[23px] absolute left-6 top-[22px] text-[19px] font-semibold text-center text-black">
+              Connect Wallet
+            </p>
           </div>
-        </a>
-        
-        <a
-          href="#invest"
-          className="relative w-44 rounded-2xl shadow-md cursor-pointer bg-gradient-to-r from-[#F6B387] to-[#F0B90BB2] bg-opacity-0 h-[50px] max-sm:h-11 max-sm:w-[150px] group"
+        </button>
+      </div>
+      {/* <h2 className="mx-auto mt-0 mb-[43px] w-full text-3xl 2xl:text-5xl font-bold tracking-wide text-center text-white leading-[72px] max-w-[608px]  max-md:text-4xl max-md:leading-[54px]  max-sm:text-3xl max-sm:leading-10">
+        Introducing Etata Token
+      </h2> */}
+      <div>
+
+      <p className="2xl:text-[22px] mx-auto mt-0 mb-7 2xl:mb-8 w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px]  max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5">
+        Matrix Eagle is not just a blockchain platform, it's a bridge between
+        technology and agriculture, between impact and income. We believe in a
+        future where farmers have fair access to funding, investors earn while
+        doing good, and communities grow together.
+      </p>
+      </div>
+      <div>
+      <p className="2xl:text-[22px] mx-auto mt-0 mb-7 2xl:mb-8 w-full text-base tracking-normal leading-6 text-center text-white max-w-[1192px]  max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5">
+        By combining innovation, transparency, and real-world value, Matrix
+        Eagle gives everyone a chance to be part of something meaningful.
+        Whether you're a farmer, investor, or supporter of sustainable growth,
+        your journey with us can shape the future of agriculture in Latin
+        America and beyond. Join us. Invest with purpose. Grow with confidence.
+      </p>
+      </div>
+      <div className="flex justify-center mb-7 2xl:mb-8">
+        <h2 className="text-xl 2xl:text-[28px] font-bold text-[#FFA100]">
+          Join us. Invest with purpose. Grow with confidence
+        </h2>
+      </div>
+
+      <div className="flex gap-20 justify-center mb-8 2xl:mb-7  max-md:gap-5 max-md:items-center ">
+        <button
+          className="w-[271px] h-[68px] relative overflow-hidden rounded-[14px] bg-radial from-[#FFDF00] from-0% to-[#FFA100] bg-opacity-0"
+          style={{
+            background:
+              "linear-gradient(26.6deg, #30304e -3%, #27283c 65.14%);",
+          }}
         >
-          <div className="absolute rounded-2xl h-[50px] left-[-53px] top-[-3px] " />
-          <div className="flex absolute justify-center items-center h-10 rounded-2xl shadow-2xl left-[3px] top-[5px] w-[170px] max-sm:w-36 max-sm:h-9">
-              <div className="flex absolute left-0 -top-0.5 justify-center items-center py-2.5 pr-5 pl-5 rounded-2xl h-[45px] w-[170px] max-sm:px-5 max-sm:py-2 max-sm:w-36 max-sm:h-10 bg-gradient-to-r from-[#455666] to-[#222222] group-hover:from-[#F0B90BB2] group-hover:to-[#222222] transition-all duration-300">
-              <div className="flex absolute top-2.5 gap-1.5 justify-center items-start h-[25px] left-[22px] w-[126px] max-sm:top-2 max-sm:left-[18px] max-sm:w-[108px]">
-                <RocketIcon className="w-6 h-6 flex-shrink-0" />
-                <span className="text-sm lg:text-base tracking-normal leading-6 text-center text-white h-[23px] w-[97px] max-sm:w-20">
-                  Invest now
-                </span>
-              </div>
-            </div>
+          <div className="w-[271px] h-[68px] absolute left-0 top-0 rounded-[14px]">
+            <p className="w-56 h-[23px] absolute left-6 top-[22px] text-[19px] font-semibold text-center text-black">
+              Download Whitepaper
+            </p>
           </div>
-        </a>
+        </button>
       </div>
     </section>
   );

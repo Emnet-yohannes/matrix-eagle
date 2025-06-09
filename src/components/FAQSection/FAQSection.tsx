@@ -5,38 +5,23 @@ import { FAQItem } from './FAQItem';
 
 const faqData = [
   {
-    question: "What is Matrix Eagle?",
-    answer: "Matrix Eagle is a blockchain-based platform for agricultural tokenization and smart farming solutions."
+    question: "Is Matrix Eagle safe to use?",
+    answer: "Yes, Matrix Eagle is built on blockchain technology, ensuring transparency, security, and immutability for all transactions and records."
   },
   {
-    question: "What types of assets can I tokenize with Matrix Eagle?",
-    answer: "You can tokenize various agricultural assets including crops, livestock, farmland, and agricultural equipment."
+    question: "How can I invest?",
+    answer: "You can invest by creating an account on our platform, completing the KYC process, and participating in the STO to purchase ETATA tokens."
   },
   {
-    question: "How can I start investing with Matrix Eagle?",
-    answer: "You can start by creating an account, completing KYC verification, and purchasing ETATA tokens through our platform."
+    question: "What do I get from the STO?",
+    answer: "By participating in the Security Token Offering (STO), you receive ETATA tokens, which offer a share in company profits and long-term platform growth."
   },
   {
-    question: "What is ETATA Token?",
-    answer: "ETATA Token is the native utility token of the Matrix Eagle ecosystem, used for governance, staking, and transactions."
-  },
-  {
-    question: "How will I receive ETATA Tokens?",
-    answer: "ETATA Tokens will be distributed to your wallet after successful participation in agricultural staking or token purchases."
-  },
-  {
-    question: "How can I contact Matrix Eagle team?",
-    answer: "You can contact our team through our official website, social media channels, or customer support portal."
-  },
-  {
-    question: "Where can I sell my ETATA tokens?",
-    answer: "ETATA tokens can be traded on supported cryptocurrency exchanges and through our platform's marketplace."
-  },
-  {
-    question: "My wallet is Hacked, What should I do?",
-    answer: "Immediately contact our security team, change all passwords, and report the incident to relevant authorities."
+    question: "Who can join?",
+    answer: "Anyone who completes the registration and KYC verification process can join Matrix Eagle, subject to local regulations."
   }
 ];
+
 
 export const FAQSection: React.FC = () => {
   return (

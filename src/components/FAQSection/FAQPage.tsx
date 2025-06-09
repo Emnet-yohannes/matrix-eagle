@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { KeyObjectives } from '../KeyObjectives/KeyObjectives';
+import { KeyObjectives } from '../KeyObjectives/AgricultureProblemAndSolution';
 import { FAQSection } from './FAQSection';
 import { Footer } from '../Fotter/Footer';
 
