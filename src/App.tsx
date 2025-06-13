@@ -1,6 +1,6 @@
 import "./App.css";
 import MatrixEagleLanding from "./components/MatrixEagleLanding.tsx";
-
+import "./i18n"; 
 function App() {
   return (
     <div className="bg-[#030B15]  ">

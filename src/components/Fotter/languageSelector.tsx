@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 const languages = [
   {
     code: "en",
@@ -15,9 +15,12 @@ const languages = [
 ];
 
 export default function LanguageSelector() {
+  const { i18n } = useTranslation();
   const [selected, setSelected] = useState(languages[0]);
   const [open, setOpen] = useState(false);
-
+const switchLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
   return (
     <div className="h-full relative text-left mt-2 ">
       <button
@@ -49,6 +52,7 @@ export default function LanguageSelector() {
               key={lang.code}
               onClick={() => {
                 setSelected(lang);
+                switchLanguage(lang.code)
                 setOpen(false);
               }}
               className="w-full flex items-center gap-2 px-3 py-2 hover:bg-[#33344A] text-white text-sm"

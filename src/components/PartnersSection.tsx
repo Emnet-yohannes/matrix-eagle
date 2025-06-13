@@ -1,6 +1,8 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 export const PartnersSection: React.FC = () => {
+  const { t } = useTranslation("team");
   const partners = [
     {
       src: "/Partner1.svg",
@@ -37,7 +39,7 @@ export const PartnersSection: React.FC = () => {
   return (
     <section className="relative w-full mt-[68px]">
       <div className="text-lg lg:text-xl 2xl:text-2xl mb-[44px]  w-full text-center font-medium text-white">
-        Featured In
+        {t("featureIn.title")}
       </div>
 
       <div>
@@ -53,7 +55,7 @@ export const PartnersSection: React.FC = () => {
                 <img
                   src={partner.src}
                   alt={partner.alt}
-                  className="h-[40px] xl:h-[130px] w-[150px] md:h-8  object-cover"
+                  className="h-[40px] min-w-[150px] md:h-8  object-cover"
                 />
               </div>
             ))}

@@ -11,6 +11,7 @@ import TokenomicsSection from "./Tokenomics/TokenomicsSection";
 import Vision from "./VisionAndMission/VisionAndMission";
 import TeamAndAdvisors from "./TeamAndAdvisor/TeamAndAdvisors";
 import { PartnersSection } from "./PartnersSection";
+import { ThreeDNetwork } from "./Animated3dLines/ThreeDNetwork";
 
 export const MatrixEagleLanding: React.FC = () => {
   return (
@@ -21,17 +22,22 @@ export const MatrixEagleLanding: React.FC = () => {
         <div className="flex items-center justify-center">
           <div className="w-full">
             <HeroSection />
-            <PresaleWidget
-              tokenName="Etata"
-              tokenSymbol="ETATA"
-              launchPrice={0.25}
-              presalePrice={0.2}
-              raisedAmount={49085538}
-              goalAmount={56000000}
-              soldTokens={93425401}
-              totalTokens={100000000}
-              conversionRate={1 / 0.2} // 1 USD gives 5 tokens
-            />
+            <div className="relative">
+              <div className="absolute inset-0 z-20 w-[40%] h-full ">
+                <ThreeDNetwork />
+              </div>
+              <PresaleWidget
+                tokenName="Etata"
+                tokenSymbol="ETATA"
+                launchPrice={0.25}
+                presalePrice={0.2}
+                raisedAmount={49085538}
+                goalAmount={56000000}
+                soldTokens={93425401}
+                totalTokens={100000000}
+                conversionRate={1 / 0.2} // 1 USD gives 5 tokens
+              />
+            </div>
           </div>
         </div>
       </div>

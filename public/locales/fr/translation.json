@@ -1,0 +1,156 @@
+{
+  "dashboard": "Tableau de bord",
+  "tokenomics": "Tokenomique",
+  "whitepaper": "Livre blanc",
+  "roadmap": "Feuille de route",
+  "howToBuy": "Comment acheter",
+  "contactUs": "Contactez-nous",
+  "connectWallet": "Connecter le portefeuille",
+  "hero": {
+    "title": "Renforcer l’agriculture grâce à l’innovation blockchain",
+    "description1": "Matrix Eagle est une plateforme blockchain conçue pour transformer et soutenir l’agriculture en Amérique latine, en commençant par la Colombie.\nNous visons à connecter des investisseurs du monde entier à de véritables projets agricoles via des contrats intelligents, une technologie blockchain sécurisée et des tokens utilitaires. Avec cette plateforme, nous rendons l’investissement dans l’agriculture plus facile, plus sûr et plus transparent, tout en donnant aux agriculteurs un accès fiable au financement et aux ressources pour faire prospérer leurs terres et leurs communautés.",
+    "connectWallet": "Connecter le portefeuille",
+    "description2": "Matrix Eagle n’est pas seulement une plateforme blockchain, c’est un pont entre la technologie et l’agriculture, entre l’impact et les revenus. Nous croyons en un avenir où les agriculteurs ont un accès équitable au financement, les investisseurs gagnent tout en faisant le bien, et les communautés grandissent ensemble.",
+    "description3": "En combinant innovation, transparence et valeur concrète, Matrix Eagle offre à chacun la chance de faire partie de quelque chose de significatif. Que vous soyez agriculteur, investisseur ou partisan de la croissance durable, votre parcours avec nous peut façonner l’avenir de l’agriculture en Amérique latine et au-delà. Rejoignez-nous. Investissez avec un objectif. Grandissez en toute confiance.",
+    "joinCall": "Rejoignez-nous. Investissez avec un objectif. Grandissez en toute confiance",
+    "downloadWhitepaper": "Télécharger le livre blanc"
+  },
+  "Presale": {
+    "presale": "Prévente",
+    "launchPrice": "Prix de lancement",
+    "fundraisingGoal": "Objectif de financement",
+    "totalTokenSupply": "Quantité totale de tokens",
+    "amountIn": "Montant en",
+    "youPay": "Vous payez",
+    "youReceive": "Vous recevez",
+    "enterAmount": "Entrez le montant",
+    "max": "Max",
+    "connectWallet": "Connecter le portefeuille",
+    "howToBuy": "Comment acheter ?",
+    "gettingError": "Une erreur ? Cliquez ici"
+  },
+  "Vision": {
+    "ourMission": "Notre mission",
+    "ourMissionDesc": "Notre vision est de créer un avenir où l’investissement agricole est facile, fiable et accessible à tous. Nous visons à utiliser la technologie blockchain pour lever les barrières et bâtir un nouveau système où agriculteurs, investisseurs et communautés grandissent ensemble. Nous voulons être les pionniers d’une agriculture plus moderne, transparente et rentable, non seulement en Colombie, mais dans toute l’Amérique latine et au-delà.",
+    "ourVision": "Notre vision",
+    "ourVisionDesc1": "Notre mission est de connecter les agriculteurs aux investisseurs mondiaux via une plateforme blockchain sécurisée et transparente. Nous nous engageons à offrir aux agriculteurs un meilleur accès aux financements, aux outils et au soutien dont ils ont besoin pour développer leurs activités.",
+    "ourVisionDesc2": "Parallèlement, nous offrons aux investisseurs un moyen de générer des revenus tout en ayant un impact réel. En combinant technologie et besoins concrets de l’agriculture, nous aidons toutes les parties à réussir et à bâtir des communautés plus fortes et durables.",
+    "altMissionImage": "Image de notre mission",
+    "altVisionImage": "Image de notre vision"
+  },
+  "values": {
+    "ourValues": "Nos valeurs",
+    "staking1": "Intérêts provenant de prêts agricoles garantis",
+    "staking2": "Profits générés par des projets agricoles performants",
+    "stakingTitle": "Programme de staking",
+    "security1": "Une part des bénéfices de l’entreprise",
+    "security2": "Une participation à la croissance à long terme de la plateforme",
+    "securityTitle": "Offre de jetons de sécurité"
+  },
+  "tokenomics": {
+    "title": "TOKENOMIE",
+    "warningText": "Veuillez noter que vous ne devez pas envoyer de tokens à cette adresse, car cela pourrait entraîner la perte permanente des tokens.",
+    "totalSupply": "100 millions de tokens",
+    "description": "La tokenomique présente la répartition et l’utilité de nos tokens, garantissant le succès et la stabilité à long terme du projet Etata.",
+    "imageAlt": "Graphique de répartition de la tokenomique",
+    "distribution": {
+      "privateSale": "Vente privée",
+      "ecosystem": "Écosystème",
+      "liquidity": "Liquidité",
+      "publicSale": "Vente publique",
+      "staking": "Staking",
+      "contingency": "Contingence",
+      "presale": "Prévente",
+      "partnersFounders": "Partenaires/fondateurs"
+    }
+  },
+  "roadmap": {
+    "title": "FEUILLE DE ROUTE",
+    "subtitle": "La feuille de route présente les étapes clés de notre projet et nos objectifs futurs",
+    "description": "Cette feuille de route offre un plan clair et progressif pour construire et développer le projet. Il commence par la mise en place des bases, le design de la plateforme, l’équipe et la tokenomique, puis avance vers le lancement de la prévente, le marketing et les partenariats agricoles. Chaque trimestre est axé sur des avancées concrètes comme le lancement du staking, l’ajout de nouvelles fonctionnalités et l’élargissement de la communauté. En suivant ce calendrier, Matrix Eagle peut croître régulièrement et gagner la confiance des investisseurs. Cela montre que nous avons une vision claire et que nous sommes prêts à tenir nos engagements.",
+    "q1": {
+      "title": "T1 2025 :",
+      "point1": "Concevoir la plateforme et la tokenomique",
+      "point2": "Recruter l’équipe de base"
+    },
+    "q2": {
+      "title": "T2 2025 :",
+      "point1": "Lancer la prévente du token Etata",
+      "point2": "Lancer les efforts de marketing et de communauté",
+      "point3": "Intégrer les premiers partenaires agricoles"
+    },
+    "q3": {
+      "title": "T3 2025 :",
+      "point1": "Lancer le programme de staking",
+      "point2": "Permettre l’intégration de portefeuille mobile",
+      "point3": "Élargir les canaux Telegram et support"
+    },
+    "q4": {
+      "title": "T4 2025 :",
+      "point1": "Lancer une STO pour des investissements en equity",
+      "point2": "Renforcer les fonctionnalités et l’interface utilisateur",
+      "point3": "Commencer le développement de partenariats stratégiques mondiaux"
+    }
+  },
+  "agriculture": {
+    "problemTitle": "Problème agricole en Amérique latine",
+    "problemIntro": "L’agriculture en Amérique latine, notamment en Colombie, fait face à de nombreux problèmes persistants :",
+    "problem1": "La plupart des agriculteurs n’ont pas accès à des prêts équitables ou fiables.",
+    "problem2": "Ils font face à des marchés instables et à de faibles marges bénéficiaires.",
+    "problem3": "Il y a un manque de confiance et de transparence dans la gestion des investissements agricoles.",
+    "solutionTitle": "La solution de Matrix Eagle :",
+    "solutionIntro": "Matrix Eagle est une plateforme qui combine la blockchain et l’agriculture réelle pour résoudre les problèmes ci-dessus. Nous créons un espace fiable et facile à utiliser où :",
+    "solution1": "Les agriculteurs peuvent recevoir des financements via des contrats intelligents protégeant les deux parties.",
+    "solution2": "Les investisseurs peuvent soutenir des projets agricoles en toute sécurité tout en générant des profits.",
+    "solution3": "Toutes les transactions sont traçables et sécurisées grâce aux normes blockchain BEP‑20.",
+    "solutionSummary": "En créant ce pont entre finance moderne et agriculture traditionnelle, Matrix Eagle apporte une valeur réelle aux deux mondes."
+  },
+  "team": {
+    "sectionTitle": "Équipe et conseillers",
+    "member1": {
+      "role": "Fondateur & PDG",
+      "description": "Leader visionnaire"
+    },
+    "member2": {
+      "role": "Architecte en chef de la blockchain",
+      "description": "Développeur blockchain"
+    },
+    "member3": {
+      "role": "Responsable des opérations agricoles",
+      "description": "Expert en agriculture"
+    },
+    "member4": {
+      "role": "Directrice financière",
+      "description": "Conseillère financière"
+    },
+    "member5": {
+      "role": "Responsable marketing",
+      "description": "Stratégiste marketing"
+    },
+    "member6": {
+      "role": "Avocate principale",
+      "description": "Experte juridique et conformité"
+    }
+  },
+  "featureIn": {
+    "title": "Présenté dans"
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "question1": "Matrix Eagle est-il sûr à utiliser ?",
+    "answer1": "Oui, Matrix Eagle est construit sur la technologie blockchain, garantissant transparence, sécurité et immutabilité pour toutes les transactions et enregistrements.",
+    "question2": "Comment puis-je investir ?",
+    "answer2": "Vous pouvez investir en créant un compte sur notre plateforme, en complétant le processus KYC et en participant à la STO pour acheter des tokens ETATA.",
+    "question3": "Que reçois-je avec la STO ?",
+    "answer3": "En participant à l’Offre de Jetons de Sécurité (STO), vous recevez des tokens ETATA, qui offrent une part des bénéfices de l’entreprise et une croissance durable de la plateforme.",
+    "question4": "Qui peut rejoindre ?",
+    "answer4": "Toute personne ayant terminé l’inscription et la vérification KYC peut rejoindre Matrix Eagle, sous réserve des régulations locales."
+  },
+  "footer": {
+    "whitepaper": "Livre blanc",
+    "roadmap": "Feuille de route",
+    "howToBuy": "Comment acheter",
+    "disclaimer": "Avertissement : les cryptomonnaies peuvent ne pas être réglementées dans votre juridiction. La valeur des cryptomonnaies peut fluctuer. Les gains peuvent être soumis aux taxes sur les plus-values ou autres taxes appliquées dans votre juridiction.",
+    "copyright": "2025© Matrix Eagle | Tous droits réservés"
+  }
+}
