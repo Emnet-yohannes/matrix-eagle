@@ -7,12 +7,11 @@ import { ContractAddress } from "./ContractAddress";
 import { TokenDistribution } from "./TokenDistribution";
 import { TokenomicsImage } from "./TokenomicsImage";
 import { TotalSupply } from "./TotalSupply";
-import { ThreeDNetwork } from "../Animated3dLines/ThreeDNetwork";
-
 interface TokenomicsSectionProps {
   title?: string;
   tokenName?: string;
   tokenSymbol?: string;
+  tokenDecimal?: number;
   totalTokens?: string;
   contractAddress?: string;
   copyIconSrc?: string;
@@ -31,6 +30,7 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
   // title,
   tokenName = "ETATA",
   tokenSymbol = "ETATA",
+  tokenDecimal = 9,
   totalTokens = "100,000,000",
   contractAddress = "0x9eAeBd7E73D97E78c77fAB743e6FFA1b550e224c",
   copyIconSrc = "/copyIcon.svg",
@@ -52,12 +52,13 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
 
   return (
     <main className="flex flex-col rounded-[29px] w-full items-center">
-      <div className="w-[70%]">
+      <div className="p-4 w-full 2xl:w-[70%]">
         <TokenomicsHeader title={t("tokenomics.title")} />
 
         <BasicTokenInfo
           name={tokenName}
           symbol={tokenSymbol}
+          decimal={tokenDecimal}
           totalTokens={totalTokens}
         />
 
@@ -86,14 +87,14 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
         />
       </div>
 
-      <div className="bg-[url('/bg3.png')]  bg-no-repeat bg-[length:100%_auto] bg-[center_140px] 2xl:bg-[center_160px] w-full flex justify-center">
-        <div className="w-[90%] flex flex-col items-center">
-          <div className="relative">
-            <div className="absolute top-[60px] inset-0 z-20 w-[40%] h-full">
+      <div className="w-full flex justify-center">
+        <div className="w-[90%] flex flex-col items-center ">
+          <div className="relative flex ml-15 md:ml-40 2xl:ml-80">
+            {/* <div className="absolute top-[60px] inset-0 z-20 w-[40%] h-full">
               <ThreeDNetwork />
-            </div>
+            </div> */}
             <TokenomicsImage
-              src="/GRAPH.svg"
+              src="/tokenomics_graph.svg"
               alt={t("tokenomics.imageAlt")}
             />
           </div>

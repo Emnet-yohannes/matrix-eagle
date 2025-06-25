@@ -16,7 +16,7 @@ const NavLinks = () => {
         <a
           key={item.key}
           href={item.link}
-          className="text-[10px] xl:text-xs 2xl:text-base font-bold tracking-normal leading-6 text-[#FFA100] cursor-pointer transition-colors duration-300 hover:text-[#ffb833a2] py-2 px-2 2xl:px-4"
+          className="text-[10px] xl:text-xs 2xl:text-base font-bold tracking-normal leading-6 text-white cursor-pointer transition-colors duration-300 hover:text-[#ffb833a2] py-2 px-2 2xl:px-4"
         >
           {t(item.key)}
         </a>

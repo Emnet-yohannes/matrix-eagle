@@ -19,7 +19,7 @@ export const ContractAddress: React.FC<ContractAddressProps> = ({
     setTimeout(() => setCopied(false), 1000); // icon reverts after 1 sec
   };
   return (
-    <section className="flex flex-col justify-center items-center  py-2  mt-8 2xl:mt-19 w-full text-center border border-orange-300 border-solid rounded-[29px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+    <section className="flex flex-col justify-center items-center  py-2  mt-8 2xl:mt-19 w-full text-center border lg:border-2 2xl:border-4 border-[#7FE4FF] border-solid rounded-[29px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <div className="2xl:py-6 flex flex-col w-full max-md:max-w-full">
         <div className="flex justify-center flex-wrap gap-3.5 items-start text-xs sm:text-sm 2xl:text-3xl tracking-wide text-white">
           <div className="self-stretch my-auto font-bold">

@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
 
   const footerLinks = [
     { label: t("footer.whitepaper"), href: "#" },
-    { label: t("footer.roadmap"), href: "#" },
+    // { label: t("footer.roadmap"), href: "#" },
     { label: t("footer.howToBuy"), href: "#" },
   ];
 
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
               <a
                 key={label}
                 href={href}
-                className="text-sm font-bold leading-5 tracking-normal text-[#FFA100] transition-colors hover:text-[#FFA100]"
+                className="text-sm font-bold leading-5 tracking-normal text-white transition-colors hover:text-[#FFA100]"
               >
                 {label}
               </a>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
               {t("footer.disclaimer")}
             </p>
 
-            <p className="mx-auto mt-4 mb-0 text-sm tracking-normal leading-5 text-center text-[#FFA100] h-[19px] w-[275px]">
+            <p className="mx-auto mt-4 mb-0 text-sm tracking-normal leading-5 text-center text-[#7FE4FF] h-[19px] w-[275px]">
               {t("footer.copyright")}
             </p>
           </div>

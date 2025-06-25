@@ -1,56 +1,61 @@
 import * as React from "react";
 import { Navbar } from "./Navbar/Navbar";
 import { HeroSection } from "./Hero/HeroSection";
-import { PresaleWidget } from "./PresaleWidget";
 import OurValues from "./OurValues/OurValues";
-import RoadmapTimeline from "./RoadMap/RoadmapTimeline";
-import { AgricultureProblemAndSolution } from "./AgricultureProblemAndSolution/AgricultureProblemAndSolution";
 import { FAQSection } from "./FAQSection/FAQSection";
 import { Footer } from "./Fotter/Footer";
 import TokenomicsSection from "./Tokenomics/TokenomicsSection";
-import Vision from "./VisionAndMission/VisionAndMission";
 import TeamAndAdvisors from "./TeamAndAdvisor/TeamAndAdvisors";
-import { PartnersSection } from "./PartnersSection";
-import { ThreeDNetwork } from "./Animated3dLines/ThreeDNetwork";
+
+import Purchase from "./Purchase/Purchase";
+import RoadMap from "./RoadMap/Roadmap";
+import AgricultureProblemAndSolution from "./AgricultureProblemAndSolution/AgricultureProblemAndSolution";
+import ContactForm from "./ContactUs/ContactForm";
+import GallerySection from "../GallerySection/GallerySection";
+import TrustedParteners from "./TrustedPartners/TrustedParteners";
+import VisionMissionSection from "./VisionAndMission/VisionMissionSection";
 
 export const MatrixEagleLanding: React.FC = () => {
   return (
+      <div className="w-full ">
     <div className="w-full">
-      {/* Hero Section with background Image*/}
-      <div className="w-full bg-[url('/tech-bg.gif')] bg-contain bg-no-repeat ">
         <Navbar />
         <div className="flex items-center justify-center">
           <div className="w-full">
-            <HeroSection />
-            <div className="relative">
-              <div className="absolute inset-0 z-20 w-[40%] h-full ">
-                <ThreeDNetwork />
+            <div className="flex flex-col md:flex-row md:gap-x-4 md:justify-between px-0 md:px-10 2xl:px-16">
+              <div className="w-[100%] md:w-[50%] ">
+                <HeroSection />
               </div>
-              <PresaleWidget
-                tokenName="Etata"
-                tokenSymbol="ETATA"
-                launchPrice={0.25}
-                presalePrice={0.2}
-                raisedAmount={49085538}
-                goalAmount={56000000}
-                soldTokens={93425401}
-                totalTokens={100000000}
-                conversionRate={1 / 0.2} // 1 USD gives 5 tokens
-              />
+              <div className="w-[100%] md:w-[50%] flex justify-center md:justify-end">
+                <Purchase />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Vision />
+      <div className="px-0 md:px-10">
+
+      <TrustedParteners />
+      <VisionMissionSection />
       <OurValues />
       <TokenomicsSection />
-      <RoadmapTimeline />
-      {/* Footer Section */}
+      <div className="flex justify-center">
+
+      <div className="w-[84%]">
+
+      <RoadMap />
+      </div>
+      </div>
       <AgricultureProblemAndSolution />
       <TeamAndAdvisors />
-      <PartnersSection />
+      </div>
+      <GallerySection />
+      <div className="px-0 md:px-10">
+
+      <ContactForm />
       <FAQSection />
       <Footer />
+      </div>
     </div>
   );
 };

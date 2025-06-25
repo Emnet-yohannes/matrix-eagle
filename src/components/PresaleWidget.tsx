@@ -19,8 +19,6 @@ interface PresaleWidgetProps {
 
 export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
   tokenSymbol,
-  launchPrice,
-  presalePrice,
   raisedAmount,
   goalAmount,
   soldTokens,
@@ -56,16 +54,18 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
 
   return (
     <div className="max-md:px-3 mb-7 2xl:mb-10">
-      <div className="w-full md:max-w-[590px] mx-auto bg-[#F6B387]  rounded-3xl p-1 md:p-2">
-        <div className="w-full border border-zinc-800 bg-gradient-to-b from-[#414247] to-[#1B1D23] bg-gray-800/95 rounded-2xl p-6 md:py-10 md:px-12">
+      <div className="w-full border border-[#7FE4FF] bg-transparent rounded-2xl p-6 md:py-10 md:px-12">
           <div className="text-center mb-6">
-            <h2 className="text-xl 2xltext-4xl font-bold tracking-wide text-white max-md:text-3xl">
-              <span className="text-[#FFA100]">{tokenSymbol}</span> {t("Presale.presale")}
+            <h2 className="text-xl 2xl:not-[]:text-4xl font-bold tracking-wide text-[#7FE4FF] max-md:text-3xl">
+              {t("Presale.buy")}
+              <span className="text-[#FFA100]">{tokenSymbol}</span>{" "}
+              {t("Presale.now")}
             </h2>
-            <p className="mt-4 text-white text-lg 2xltext-xl">
-              1 {tokenSymbol} = ${presalePrice.toFixed(3)}
-              <br />
-              {t("Presale.launchPrice")} = ${launchPrice.toFixed(3)}
+            <p className="mt-4 text-white text-lg 2xl:**:text-xl">
+              {t("Presale.poweringTheFuture")} 
+            </p>
+            <p className="mt-4 text-white text-lg 2xl:**:text-xl">
+              {t("Presale.poweringTheFuture")} 
             </p>
           </div>
 
@@ -123,7 +123,8 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           {/* Input Amount */}
           <div className="mb-4">
             <label className="block text-white font-medium mb-1 text-sm 2xltext-lg">
-              {t("Presale.amountIn")} <span className="font-bold">{selectedCurrency}</span>{" "}
+              {t("Presale.amountIn")}{" "}
+              <span className="font-bold">{selectedCurrency}</span>{" "}
               {t("Presale.youPay")}:
             </label>
             <div className="relative">
@@ -152,7 +153,8 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           {/* ETATA Output */}
           <div className="mb-4">
             <label className="block text-white font-medium mb-1 text-sm 2xltext-lg">
-              {t("Presale.amountIn")} <span className="font-bold">{tokenSymbol}</span> {""}
+              {t("Presale.amountIn")}{" "}
+              <span className="font-bold">{tokenSymbol}</span> {""}
               {t("Presale.youReceive")}
             </label>
             <div className="rounded-2xl bg-neutral-200 h-12 flex items-center px-4 text-neutral-500 text-lg">
@@ -190,7 +192,6 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

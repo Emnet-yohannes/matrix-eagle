@@ -14,7 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 /* index.css */
-@keyframes tickerScroll {
+@keyframes tickerScrollLeft {
   0% {
     transform: translateX(0%);
   }
@@ -23,8 +23,19 @@
   }
 }
 
-.ticker-track {
-  animation: tickerScroll 30s linear infinite;
-  display: flex;
-  width: max-content;
+@keyframes tickerScrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.ticker-track-left {
+  animation: tickerScrollLeft 30s linear infinite;
+}
+
+.ticker-track-right {
+  animation: tickerScrollRight 30s linear infinite;
 }
