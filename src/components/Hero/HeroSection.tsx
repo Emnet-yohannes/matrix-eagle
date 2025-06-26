@@ -79,21 +79,6 @@ export const HeroSection: React.FC = () => {
         </h2>
       </div>
 
-      {/* Example button (commented out) */}
-      {/* 
-      <div className="flex gap-20 justify-center mb-8 3xl:mb-7 max-md:gap-5 max-md:items-center">
-        <button
-          className="w-[271px] h-[68px] relative overflow-hidden rounded-[14px] bg-radial from-[#FFDF00] from-0% to-[#FFA100] bg-opacity-0"
-          style={{ background: "linear-gradient(26.6deg, #30304e -3%, #27283c 65.14%)" }}
-        >
-          <div className="w-[271px] h-[68px] relative left-0 top-0 rounded-[14px]">
-            <p className="w-56 absolute left-6 top-1/2 -translate-y-1/2 text-[19px] font-semibold text-center text-black">
-              {t("hero.downloadWhitepaper")}
-            </p>
-          </div>
-        </button>
-      </div>
-      */}
     </section>
   );
 };

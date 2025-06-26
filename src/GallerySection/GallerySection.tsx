@@ -1,21 +1,15 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import ImageTicker from "../components/ImageTicker";
 
 export default function GallerySection() {
-  const galleryImages = [
-    { src: "/galleryImages/gallery1.png", alt: "Agricultural field visit" },
-    { src: "/galleryImages/gallery2.png", alt: "Team meeting with farmers" },
-    { src: "/galleryImages/gallery3.png", alt: "Community event" },
-    { src: "/galleryImages/gallery4.png", alt: "Partnership meeting" },
-    { src: "/galleryImages/gallery5.png", alt: "Agricultural demonstration" },
-    { src: "/galleryImages/gallery6.png", alt: "Group discussion" },
-    { src: "/galleryImages/gallery7.png", alt: "Field event" },
-    { src: "/galleryImages/gallery8.png", alt: "Team collaboration" },
-    { src: "/galleryImages/gallery9.png", alt: "Conference presentation" },
-    { src: "/galleryImages/gallery10.png", alt: "Africana event" },
-    { src: "/galleryImages/gallery11.png", alt: "Field inspection" },
-    { src: "/galleryImages/gallery12.png", alt: "Partnership ceremony" },
-    { src: "/galleryImages/gallery13.png", alt: "Group photo" },
-  ];
+  const { t } = useTranslation();
+
+  const galleryImages = Array.from({ length: 13 }, (_, index) => ({
+    src: `/galleryImages/gallery${index + 1}.png`,
+    alt: t(`gallery.alt.${index}`),
+  }));
 
   const topRowImages = galleryImages.slice(0, 7);
   const bottomRowImages = galleryImages.slice(7);
@@ -29,14 +23,10 @@ export default function GallerySection() {
             className="text-2xl sm:text-4xl md:text-5xl 2xl:text-[66px] 3xl:text-[87px] font-bold mb-4 sm:mb-6 2xl:mb-8"
             style={{ color: "#7fe4ff" }}
           >
-            Our Gallery
+            {t("gallery.title")}
           </h2>
           <p className="text-sm sm:text-lg md:text-xl 2xl:text-[30px] 3xl:text-[40px] font-medium max-w-[90vw] sm:max-w-4xl 2xl:max-w-[80%] mx-auto leading-relaxed">
-            Our gallery captures the journey of Matrix Eagle, from participating
-            in industry events to collaborating with farmers, investors, and
-            agricultural experts. These moments reflect our commitment to
-            building a stronger, greener future through real connections, shared
-            knowledge, and meaningful partnerships.
+            {t("gallery.description")}
           </p>
         </div>
 

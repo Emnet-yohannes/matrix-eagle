@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Purchase() {
+  const { t } = useTranslation();
   const [selectedCurrency, setSelectedCurrency] = useState("USDT");
   const [amount, setAmount] = useState("5");
   const [tokenAmount, setTokenAmount] = useState("20,000");
@@ -26,15 +28,15 @@ export default function Purchase() {
           {/* Header */}
           <div className="text-center mb-4 md:mb-8">
             <h1 className="text-2xl sm:text-4xl lg:text-5xl 2xl:text-[52px] font-bold mb-2 md:mb-4">
-              <span className="text-[#7fe4ff]">Buy </span>
+              <span className="text-[#7fe4ff]">{t("Purchase.buy")} </span>
               <span className="text-yellow-400">$ETATA </span>
-              <span className="text-[#7fe4ff]">Now</span>
+              <span className="text-[#7fe4ff]">{t("Purchase.Now")}</span>
             </h1>
             <h2 className="text-white text-base sm:text-xl md:text-2xl 2xl:text-[41px] font-medium mb-2">
-              Powering the future of Agriculture
+              {t("Purchase.poweringFuture")}
             </h2>
             <p className="text-white text-sm sm:text-base md:text-lg 2xl:text-[24px] font-medium">
-              Secure your tokens before the next price increase.
+              {t("Purchase.secureToken")}
             </p>
           </div>
 
@@ -49,12 +51,12 @@ export default function Purchase() {
           {/* Stats */}
           <div className="text-center mb-4 md:mb-8 space-y-2 text-xs sm:text-base md:text-lg 2xl:text-[22px]">
             <div>
-              <span className="text-white">USDT RAISED SO FAR: </span>
+              <span className="text-white">{t("Purchase.usdRaised")} </span>
               <span className="text-green-400 font-bold">$15,000</span>
             </div>
             <div className="text-white">
-              <span>Tokens </span>
-              <span className="text-green-400 font-semibold">Sold</span>
+              <span>{t("Purchase.tokens")} </span>
+              <span className="text-green-400 font-semibold">{t("Purchase.sold")}</span>
               <span>: 150,000,000</span>
             </div>
           </div>
@@ -86,7 +88,7 @@ export default function Purchase() {
 
           {/* Amount Inputs */}
           <div className="text-xs sm:text-base 2xl:text-[24px] mb-2">
-            Amount You Want to Invest
+            {t("Purchase.amountTOInvest")}
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 2xl:gap-[49px] 2xl:justify-between w-full mb-6">
             <div className="w-full sm:w-1/2">
@@ -113,12 +115,12 @@ export default function Purchase() {
 
           {/* Rate Info */}
           <div className="text-left text-white mb-4 md:mb-6 text-xs sm:text-base md:text-lg 2xl:text-[24px]">
-            Current Rate: 1 USDT = 200 $ETATA
+            {t("Purchase.currentRate")}: 1 USDT = 200 $ETATA
           </div>
 
           {/* Connect Button */}
           <button className="w-full bg-[#7fe4ff] hover:bg-[#7fe4ff]/90 text-[#01273E] text-xs sm:text-base md:text-lg 2xl:text-[29px] font-bold py-2.5 sm:py-4 rounded-xl transition-colors">
-            Connect Wallet & Buy $ETATA
+            {t("Purchase.connectWalletandBuy")} $ETATA
           </button>
         </div>
       </div>

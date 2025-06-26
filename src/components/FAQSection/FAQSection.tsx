@@ -24,6 +24,30 @@ export const FAQSection: React.FC = () => {
       question: t("faq.question4"),
       answer: t("faq.answer4"),
     },
+    {
+      question: t("faq.question5"),
+      answer: t("faq.answer5"),
+    },
+    {
+      question: t("faq.question6"),
+      answer: t("faq.answer6"),
+    },
+    {
+      question: t("faq.question7"),
+      answer: t("faq.answer7"),
+    },
+    {
+      question: t("faq.question8"),
+      answer: t("faq.answer8"),
+    },
+    {
+      question: t("faq.question9"),
+      answer: t("faq.answer9"),
+    },
+    {
+      question: t("faq.question10"),
+      answer: t("faq.answer10"),
+    },
   ];
 
   return (

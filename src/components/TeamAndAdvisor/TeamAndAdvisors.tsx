@@ -1,43 +1,48 @@
+"use client";
+import { useTranslation } from "react-i18next";
+
 export default function TeamAndAdvisors() {
+  const { t } = useTranslation();
+
   const teamMembers = [
     {
-      name: "Bonner Gibbs",
-      title: "Founder & CEO at Matrix Eagle",
+      name: t("team.members.bonner.name"),
+      title: t("team.members.bonner.title"),
       image: "/teamMemberImages/CEO.png",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Héctor Hernandez",
-      title: "Co-founder at Matrix Eagle",
-      image: "/teamMemberImages/cofounderImage1.png",
+      name: t("team.members.hector.name"),
+      title: t("team.members.hector.title"),
+      image: "/teamMemberImages/cofounderimage.jpg",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Eder Castro",
-      title: "Strategic Advisor - Finance & Operations",
+      name: t("team.members.eder.name"),
+      title: t("team.members.eder.title"),
       image: "/teamMemberImages/strategicAdvisor.png",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "José Antonio Vega Henao",
-      title: "Food engineering & crops planning expert & curing plants",
+      name: t("team.members.jose.name"),
+      title: t("team.members.jose.title"),
       image: "/teamMemberImages/foodEngineer.png",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Aryan (Usama)",
-      title: "Project Manager & Senior Marketing Executive",
+      name: t("team.members.aryan.name"),
+      title: t("team.members.aryan.title"),
       image: "/teamMemberImages/projectManager.png",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Marko Milanović",
-      title: "Blockchain Developer",
+      name: t("team.members.marko.name"),
+      title: t("team.members.marko.title"),
       image: "/teamMemberImages/blockchainDeveloper.png",
       twitter: "#",
       linkedin: "#",
@@ -48,29 +53,29 @@ export default function TeamAndAdvisors() {
     <div className="bg-transparent py-6 sm:py-16 md:py-20 2xl:pt-[141px] px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl 2xl:max-w-[94%] 3xl:max-w-[88%] mx-auto">
         <h1 className="text-[#7fe4ff] text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-[66px] 3xl:text-[87px] font-bold text-center mb-8 sm:mb-16">
-          Team and Advisors
+          {t("team.title")}
         </h1>
 
-        <div className="2xl:mt-[120px] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-8 md:gap-10 max-w-6xl 2xl:max-w-full mx-auto">
+        <div className="2xl:mt-[120px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-8 md:gap-10 max-w-6xl 2xl:max-w-full mx-auto">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-transparent">
               <div className="p-0 w-full max-w-[90vw] sm:max-w-none 2xl:w-[488px] 3xl:w-[650px]">
-                <div className="relative mb-3 sm:mb-4 2xl:mb-0 border border-[#7FE4FF] md:border-2 2xl:border-4 bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 rounded-xl sm:rounded-2xl h-[300px] sm:h-auto 2xl:h-[375px] 3xl:h-[500px]">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full sm:h-72 md:h-80 2xl:h-full object-cover rounded-xl sm:rounded-2xl border"
-                  />
-                </div>
+                <div className="relative mb-3 sm:mb-4 2xl:mb-0 border border-[#7FE4FF] md:border-2 2xl:border-4 bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 rounded-xl sm:rounded-2xl overflow-hidden max-w-[622px] mx-auto aspect-[311/286]">
+  <img
+    src={member.image}
+    alt={member.name}
+    className="w-full h-full object-contain rounded-xl sm:rounded-2xl"
+  />
+</div>
                 <div className="flex justify-between items-start gap-3 sm:gap-4 2xl:gap-x-0 mt-3 sm:mt-4 2xl:mt-[23px]">
                   <div className="space-y-1 sm:space-y-2">
                     <h3 className="text-[#7fe4ff] text-base sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-[47px] 3xl:text-[62px] font-semibold leading-tight">
                       {member.name}
                     </h3>
                     <p className="text-white text-xs sm:text-base md:text-lg 2xl:text-[27px] 3xl:text-[35px] font-medium leading-relaxed max-w-[240px] sm:max-w-[280px] md:max-w-full">
-                      {index === 0 && member.title.includes("Matrix Eagle") ? (
+                      {index === 0 && member.title.includes(" at ") ? (
                         <>
-                          {member.title.replace(" at Matrix Eagle", " at ")}
+                          {member.title.split(" at ")[0]}{" "}
                           <span className="text-[#7fe4ff]">Matrix Eagle</span>
                         </>
                       ) : (

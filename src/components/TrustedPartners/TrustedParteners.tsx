@@ -1,5 +1,10 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 
 const TrustedParteners = () => {
+  const { t } = useTranslation();
+
   const TrustedParteners = [
     "/trustedpartner1.png",
     "/trustedpartner2.png",
@@ -12,8 +17,8 @@ const TrustedParteners = () => {
       <div className="w-full md:max-w-7xl 2xl:max-w-[86%]">
         <div className="text-center text-white font-bold tracking-wider mb-12">
           <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-4xl  2xl:text-[36px] 3xl:text-6xl">
-            SUPPORTED BY OUR{" "}
-            <span className="text-[#7fe4ff]">TRUSTED PARTNERS</span>
+            {t("trustedPartners.titlePart1")}{" "}
+            <span className="text-[#7fe4ff]">{t("trustedPartners.titlePart2")}</span>
           </h2>
         </div>
 
@@ -25,7 +30,7 @@ const TrustedParteners = () => {
             >
               <img
                 src={partner}
-                alt={`Partner ${index + 1}`}
+                alt={t("trustedPartners.alt", { index: index + 1 })}
                 className="object-contain max-h-full max-w-[80%]"
               />
             </div>

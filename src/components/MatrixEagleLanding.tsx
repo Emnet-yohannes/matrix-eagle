@@ -46,7 +46,7 @@ export const MatrixEagleLanding: React.FC = () => {
       </div>
       <div>
         <TotalSupplySection />
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-black/36">
           <div className="w-[84%] 2xl:w-full">
             <RoadMap />
           </div>
