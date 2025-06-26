@@ -42,10 +42,10 @@ const timelineData = [
 
 export default function RoadMap() {
   return (
-    <div className="bg-transparent text-white py-4 md:py-8 2xl:py-12 px-4">
-      <div className="max-w-6xl 2xl:max-w-[60%] mx-auto">
+    <div className="bg-black/36 text-white py-4 md:py-8 2xl:py-[142px] px-4">
+      <div className="max-w-6xl 2xl:max-w-[80%] mx-auto">
         {/* Header */}
-        <h1 className="text-xl  md:text-3xl  2xl:text-7xl text-center font-bold mb-0 md:mb-8 2xl:mb-16 text-[#7fe4ff]">
+        <h1 className="text-xl  md:text-3xl  2xl:text-[66px] 3xl:text-[87px] text-center font-bold mb-0 md:mb-8 2xl:mb-16 text-[#7fe4ff]">
           Roadmap
         </h1>
 
@@ -57,7 +57,7 @@ export default function RoadMap() {
           {timelineData.map((item) => (
             <div
               key={item.quarter}
-              className="relative 2xl:mb-20 flex flex-col py-10"
+              className="relative flex flex-col py-10 2xl:py-20 "
             >
               {/* Timeline Circle */}
               <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 z-10 rounded-full border-4 border-[#7FE4FF] bg-[#7FE4FF] items-center justify-center">
@@ -72,7 +72,7 @@ export default function RoadMap() {
                   <img
                     src={item.image}
                     alt={`${item.quarter} illustration`}
-                    className="w-[250px] h-[250px] object-cover"
+                    className="w-[250px] h-[250px] object-contain"
                   />
                 </div>
                 <div className="text-center max-w-xs">
@@ -88,15 +88,15 @@ export default function RoadMap() {
               </div>
 
               {/* Desktop version */}
-              <div className="hidden md:flex mt-20 md:mt-28 relative flex-col xl:flex-row items-center justify-between gap-2 md:gap-4 2xl:gap-8">
+              <div className="hidden md:flex mt-20 md:mt-28  relative flex-col xl:flex-row items-center justify-between gap-2 md:gap-4 2xl:gap-8">
                 {item.direction === "left" ? (
                   <>
                     {/* Text Left */}
-                    <div className="w-full xl:w-1/2 text-left">
-                      <h2 className="text-lg md:text-xl 2xl:text-3xl font-bold mb-4 text-[#7fe4ff]">
+                    <div className="w-full xl:w-[40%] text-left 2xl:mt-[70px] 2xl:mb-[70px] ">
+                      <h2 className="text-lg md:text-xl 2xl:text-[45px] 3xl:text-[60px] font-bold mb-4 text-[#7fe4ff]">
                         {item.quarter}:
                       </h2>
-                      <ul className="text-sm md:text-base 2xl:text-lg space-y-2">
+                      <ul className="text-sm md:text-base 2xl:text-[30px] 3xl:text-[36px] font-medium space-y-2">
                         {item.points.map((point, idx) => (
                           <li key={idx}>• {point}</li>
                         ))}
@@ -104,12 +104,12 @@ export default function RoadMap() {
                     </div>
 
                     {/* Image Right */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 xl:pl-8">
+                    <div className="absolute left-1/2 transform -translate-x-1/2 xl:pl-8 ">
                       <div className="rounded-2xl overflow-hidden">
                         <img
                           src={item.image}
                           alt={`${item.quarter} illustration`}
-                          className="w-[200px] 2xl:w-[400px] h-[200px] border-4 2xl:mt-16 2xl:h-[260px] object-cover"
+                          className="w-[200px] 2xl:w-[300px] 3xl:w-[400px] h-[200px] 2xl:mt-16 2xl:h-[338px]  3xl:h-[450px] object-contain"
                         />
                       </div>
                     </div>
@@ -122,18 +122,18 @@ export default function RoadMap() {
                         <img
                           src={item.image}
                           alt={`${item.quarter} illustration`}
-                          className="w-[200px] 2xl:w-[400px] h-[200px] 2xl:h-[260px] object-cover"
+                          className="w-[200px] 2xl:w-[300px] 3xl:w-[400px] h-[200px] 2xl:h-[338px] 3xl:h-[450px] object-contain"
                         />
                       </div>
                     </div>
 
                     {/* Text Right */}
-                    <div className="w-full xl:w-1/2 xl:pl-8 flex justify-end">
+                    <div className="w-full  xl:w-[40%]  xl:pl-8 2xl:pl-[150px] flex justify-start ">
                       <div>
-                        <h2 className="text-lg md:text-xl 2xl:text-3xl font-bold mb-4 text-[#7fe4ff]">
+                        <h2 className="text-lg md:text-xl 2xl:text-[45px]  3xl:text-[60px] font-semibold mb-4 text-[#7fe4ff]">
                           {item.quarter}:
                         </h2>
-                        <ul className="text-sm md:text-base 2xl:text-lg space-y-2">
+                        <ul className="text-sm md:text-base 2xl:text-[30px] 3xl:text-[36px] font-medium space-y-2">
                           {item.points.map((point, idx) => (
                             <li key={idx}>• {point}</li>
                           ))}
@@ -148,9 +148,9 @@ export default function RoadMap() {
         </div>
 
         {/* Description */}
-        <div className="mt-0 md:mt-8 2xl:mt-12 flex justify-center">
-          <div className="w-full max-w-4xl text-center text-white space-y-6 text-lg">
-          <p className="text-sm md:text-base 2xl:text-lg">
+        <div className="mt-0 md:mt-8 2xl:mt-[140px] flex justify-center">
+          <div className="w-full max-w-4xl 2xl:max-w-[94%] text-center text-white space-y-6 text-sm md:text-base 2xl:text-[30px] 3xl:text-[35px] md:font-semibold">
+          <p >
               This roadmap provides a clear step-by-step plan for building and
               growing the project. It starts with setting up the foundation,
               platform design, team, and tokenomics and moves toward launching

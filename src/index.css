@@ -39,3 +39,7 @@
 .ticker-track-right {
   animation: tickerScrollRight 30s linear infinite;
 }
+
+@theme {
+  --breakpoint-3xl: 160rem;
+}

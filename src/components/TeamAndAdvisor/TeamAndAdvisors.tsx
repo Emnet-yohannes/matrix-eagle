@@ -8,9 +8,9 @@ export default function TeamAndAdvisors() {
       linkedin: "#",
     },
     {
-      name: "Hector",
+      name: "Héctor Hernandez",
       title: "Co-founder at Matrix Eagle",
-      image: "/teamMemberImages/coFounder.png",
+      image: "/teamMemberImages/cofounderImage1.png",
       twitter: "#",
       linkedin: "#",
     },
@@ -45,29 +45,29 @@ export default function TeamAndAdvisors() {
   ];
 
   return (
-    <div className="bg-transparent  py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
-      <div className="max-w-7xl 2xl:max-w-[86%] mx-auto">
-        <h1 className="text-[#7fe4ff] text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-center mb-12 sm:mb-16">
+    <div className="bg-transparent py-6 sm:py-16 md:py-20 2xl:pt-[141px] px-4 sm:px-6 md:px-8">
+      <div className="max-w-7xl 2xl:max-w-[94%] 3xl:max-w-[88%] mx-auto">
+        <h1 className="text-[#7fe4ff] text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-[66px] 3xl:text-[87px] font-bold text-center mb-8 sm:mb-16">
           Team and Advisors
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-6xl 2xl:max-w-[60%] mx-auto">
+        <div className="2xl:mt-[120px] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-8 md:gap-10 max-w-6xl 2xl:max-w-full mx-auto">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-transparent">
-              <div className="p-0">
-                <div className="relative mb-3 sm:mb-4 border bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-[#7FE4FF] rounded-2xl">
+              <div className="p-0 w-full max-w-[90vw] sm:max-w-none 2xl:w-[488px] 3xl:w-[650px]">
+                <div className="relative mb-3 sm:mb-4 2xl:mb-0 border border-[#7FE4FF] md:border-2 2xl:border-4 bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 rounded-xl sm:rounded-2xl h-[300px] sm:h-auto 2xl:h-[375px] 3xl:h-[500px]">
                   <img
-                    src={member.image || "/placeholder.svg"}
+                    src={member.image}
                     alt={member.name}
-                    className="w-full h-64 sm:h-72 md:h-80 rounded-2xl object-cover"
+                    className="w-full h-full sm:h-72 md:h-80 2xl:h-full object-cover rounded-xl sm:rounded-2xl border"
                   />
                 </div>
-                <div className="flex justify-between items-start gap-3 sm:gap-4">
+                <div className="flex justify-between items-start gap-3 sm:gap-4 2xl:gap-x-0 mt-3 sm:mt-4 2xl:mt-[23px]">
                   <div className="space-y-1 sm:space-y-2">
-                    <h3 className="text-[#7fe4ff] text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold leading-tight">
+                    <h3 className="text-[#7fe4ff] text-base sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-[47px] 3xl:text-[62px] font-semibold leading-tight">
                       {member.name}
                     </h3>
-                    <p className="text-[#ffffff] text-sm sm:text-base md:text-lg leading-relaxed max-w-[280px] md:max-w-full">
+                    <p className="text-white text-xs sm:text-base md:text-lg 2xl:text-[27px] 3xl:text-[35px] font-medium leading-relaxed max-w-[240px] sm:max-w-[280px] md:max-w-full">
                       {index === 0 && member.title.includes("Matrix Eagle") ? (
                         <>
                           {member.title.replace(" at Matrix Eagle", " at ")}
@@ -78,29 +78,20 @@ export default function TeamAndAdvisors() {
                       )}
                     </p>
                   </div>
-
-                  <div className="flex gap-2 mt-1">
+                  <div className="flex gap-2 mt-1 2xl:mt-5 items-center">
                     <a
                       href={member.twitter}
-                      className="w-7 h-7 sm:w-8 sm:h-8 bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
+                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
                     >
-                      <svg
-                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-black"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
                     </a>
                     <a
                       href={member.linkedin}
-                      className="w-7 h-7 sm:w-8 sm:h-8 bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
+                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
                     >
-                      <svg
-                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-black"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                     </a>

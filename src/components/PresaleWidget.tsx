@@ -53,18 +53,18 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
   const { t } = useTranslation();
 
   return (
-    <div className="max-md:px-3 mb-7 2xl:mb-10">
+    <div className="max-md:px-3 mb-7 3xl:mb-10">
       <div className="w-full border border-[#7FE4FF] bg-transparent rounded-2xl p-6 md:py-10 md:px-12">
           <div className="text-center mb-6">
-            <h2 className="text-xl 2xl:not-[]:text-4xl font-bold tracking-wide text-[#7FE4FF] max-md:text-3xl">
+            <h2 className="text-xl 3xl:not-[]:text-4xl font-bold tracking-wide text-[#7FE4FF] max-md:text-3xl">
               {t("Presale.buy")}
               <span className="text-[#FFA100]">{tokenSymbol}</span>{" "}
               {t("Presale.now")}
             </h2>
-            <p className="mt-4 text-white text-lg 2xl:**:text-xl">
+            <p className="mt-4 text-white text-lg 3xl:**:text-xl">
               {t("Presale.poweringTheFuture")} 
             </p>
-            <p className="mt-4 text-white text-lg 2xl:**:text-xl">
+            <p className="mt-4 text-white text-lg 3xl:**:text-xl">
               {t("Presale.poweringTheFuture")} 
             </p>
           </div>
@@ -171,7 +171,7 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
           </button>
 
           {/* Help & Error Buttons */}
-          <div className="flex flex-col md:flex-row justify-between 2xl:mb-16">
+          <div className="flex flex-col md:flex-row justify-between 3xl:mb-16">
             <div className="w-full md:w-[45%] flex justify-center">
               <a
                 href="#how-to-buy"

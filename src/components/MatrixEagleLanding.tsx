@@ -14,47 +14,51 @@ import ContactForm from "./ContactUs/ContactForm";
 import GallerySection from "../GallerySection/GallerySection";
 import TrustedParteners from "./TrustedPartners/TrustedParteners";
 import VisionMissionSection from "./VisionAndMission/VisionMissionSection";
+import TotalSupplySection from "./TotalSupply/TotalSupplySection";
 
 export const MatrixEagleLanding: React.FC = () => {
   return (
-      <div className="w-full ">
     <div className="w-full">
+      <div className="w-full">
         <Navbar />
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center w-full">
           <div className="w-full">
-            <div className="flex flex-col md:flex-row md:gap-x-4 md:justify-between px-0 md:px-10 2xl:px-16">
-              <div className="w-[100%] md:w-[50%] ">
+            <div className="flex flex-col lg:flex-row lg:gap-x-4 lg:justify-between px-0 lg:px-10 2xl:px-0 ">
+              <div className="w-[100%] lg:w-[50%] 2xl:w-[56%]  2xl:mt-[180px] 2xl:px-[60px] 3xl:px-[130px] ">
                 <HeroSection />
               </div>
-              <div className="w-[100%] md:w-[50%] flex justify-center md:justify-end">
-                <Purchase />
+              <div className="w-full lg:w-[36%] 2xl:w-[45%] ">
+                <div className=" relative w-[100%] lg:mt-[40px] 2xl:mt-[140px] flex justify-center lg:justify-end  px-4 sm:px-6 lg:px-8 lg:px-12 2xl:pr-[130px] py-0">
+                  <Purchase />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="px-0 md:px-10">
-
-      <TrustedParteners />
+      <div className="px-0 lg:px-10 pt-[20px] lg:pt-[80px] 2xl:px-[130px] 2xl:pt-[20px]">
+        <TrustedParteners />
+      </div>
       <VisionMissionSection />
       <OurValues />
-      <TokenomicsSection />
       <div className="flex justify-center">
-
-      <div className="w-[84%]">
-
-      <RoadMap />
+        <TokenomicsSection />
       </div>
-      </div>
-      <AgricultureProblemAndSolution />
-      <TeamAndAdvisors />
+      <div>
+        <TotalSupplySection />
+        <div className="flex justify-center">
+          <div className="w-[84%] 2xl:w-full">
+            <RoadMap />
+          </div>
+        </div>
+        <AgricultureProblemAndSolution />
+        <TeamAndAdvisors />
       </div>
       <GallerySection />
-      <div className="px-0 md:px-10">
-
-      <ContactForm />
-      <FAQSection />
-      <Footer />
+      <div className="px-0 lg:px-10">
+        <ContactForm />
+        <FAQSection />
+        <Footer />
       </div>
     </div>
   );

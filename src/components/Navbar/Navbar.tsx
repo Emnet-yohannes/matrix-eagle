@@ -1,4 +1,5 @@
 "use client";
+
 import * as React from "react";
 import Logo from "../../../public/matrixLogo1.svg";
 import LanguageSelector from "../Fotter/languageSelector";
@@ -10,21 +11,18 @@ export const Navbar: React.FC = () => {
   const { t } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  const handleConnectWallet = () => {
-    console.log("connect wallet");
-  };
+  const handleConnectWallet = () => console.log("connect wallet");
 
   return (
-    <header className="relative w-full z-50">
+    <header className="relative w-full z-50 2xl:px-[40px]">
       {/* Top Navbar */}
-      <div className="flex justify-between items-center w-full px-4 sm:px-6 md:px-8 2xl:px-12 py-3 h-[64px] sm:h-[72px] md:h-[84px] lg:h-[96px] 2xl:h-[111px]">
+      <div className="flex justify-between items-center w-full px-4 sm:px-6 md:px-8 2xl:px-0 2xl:pt-[85px] py-3 h-[64px] sm:h-[72px] md:h-[84px] lg:h-[96px] 2xl:h-[110px]">
         {/* Logo */}
         <div className="flex items-center h-full">
           <img
             src={Logo}
             alt="Matrix Eagle Logo"
-            className="h-[28px] sm:h-[40px] md:h-[50px] 2xl:h-[65px] min-w-[90px] md:min-w-[130px] 2xl:min-w-[150px] object-contain"
+            className="h-[28px] sm:h-[40px] md:h-[50px] 2xl:h-[85px] object-contain min-w-[90px] md:min-w-[130px] 2xl:min-w-[160px] 2xl:max-w-[570px]"
           />
         </div>
 
@@ -34,17 +32,17 @@ export const Navbar: React.FC = () => {
         </nav>
 
         {/* Connect Wallet Button */}
-        <div className="hidden sm:inline-block p-[2px] rounded-lg bg-[radial-gradient(circle_at_top_left,_#38B6FF,_#054BA9)]">
+        <div className="hidden lg:inline-block p-[2px] 2xl:p-1 rounded-lg bg-[radial-gradient(circle_at_top_left,_#38B6FF,_#054BA9)]">
           <button
             onClick={handleConnectWallet}
-            className="px-4 sm:px-5 md:px-6 py-1 sm:py-2 cursor-pointer hover:opacity-80 rounded-lg text-white font-medium text-xs sm:text-sm md:text-base bg-gradient-to-br from-[#000000] to-[#313030] w-full h-full"
+            className="px-4 sm:px-5 md:px-6 py-1 sm:py-2 rounded-lg text-white text-xs sm:text-sm md:text-base 2xl:text-[24px] bg-gradient-to-br from-[#000000] to-[#313030] font-bold hover:opacity-80"
           >
             {t("connectWallet")}
           </button>
         </div>
 
         {/* Language Selector */}
-        <div className="hidden sm:flex items-center ml-4">
+        <div className="hidden lg:flex items-center ml-4">
           <LanguageSelector />
         </div>
 

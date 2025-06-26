@@ -13,7 +13,7 @@ export const SecurityCard: React.FC<SecurityCardProps> = ({
   paddingClass = "px-14"
 }) => {
   return (
-    <article className="grow text-lg 2xl:text-2xl font-semibold tracking-wide text-center text-white rounded-3xl  max-md:mt-10">
+    <article className="grow text-lg 3xl:text-2xl font-semibold tracking-wide text-center text-white rounded-3xl  max-md:mt-10">
       <div className={`flex items-center justify-center overflow-hidden relative flex-col ${paddingClass} w-full rounded-3xl aspect-[0.881] `}>
         <img
           src={imageUrl}

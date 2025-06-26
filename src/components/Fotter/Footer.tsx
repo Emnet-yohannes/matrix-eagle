@@ -9,36 +9,38 @@ export const Footer: React.FC = () => {
 
   const footerLinks = [
     { label: t("footer.whitepaper"), href: "#" },
-    // { label: t("footer.roadmap"), href: "#" },
     { label: t("footer.howToBuy"), href: "#" },
   ];
 
   return (
-    <footer className="relative mt-20 w-full">
-      <div className="relative w-full h-auto lg:h-[289px]">
-        <div className="relative px-48 py-0 mx-auto my-0 w-full max-w-screen-2xl h-[285px] max-md:px-24 max-md:py-0 max-sm:px-5 max-sm:py-0">
-          <hr className="mx-auto my-0 w-full h-[1px] bg-gradient-to-r from-[#030B15] via-neutral-400 to-[#030B15] border-0 max-w-[1488px]" />
-
+    <footer className="relative mt-4  md:mt-20 w-full">
+      <div className="relative w-full h-auto sm:h-auto 2xl:h-[529px]">
+        <div className="relative w-full px-5 sm:px-24 md:px-48 mx-auto pb-4 pt-0 sm:py-0 h-auto sm:h-[285px]">
+          {/* Social Icons */}
           <SocialIcons />
 
-          <nav className="relative mx-auto mt-6 h-[45px] flex items-center justify-center gap-6">
+          {/* Links */}
+          <nav className="mt-6 flex justify-center items-center gap-4 sm:gap-6 2xl:gap-x-[38px] sm:h-[45px] sm:w-[36%] mx-auto">
             {footerLinks.map(({ label, href }) => (
               <a
                 key={label}
                 href={href}
-                className="text-sm font-bold leading-5 tracking-normal text-white transition-colors hover:text-[#FFA100]"
+                className="text-xs sm:text-sm 2xl:text-[26px] 3xl:text-[32px] font-bold text-white hover:text-white/70 transition-colors"
               >
                 {label}
               </a>
             ))}
           </nav>
 
-          <div>
-            <p className="mx-auto mt-0 md:mt-7 mb-0 text-sm tracking-normal leading-5 text-center text-white">
-              {t("footer.disclaimer")}
+          {/* Disclaimer */}
+          <div className="mt-4 sm:mt-7 text-center px-2">
+            <p className="text-xs sm:text-sm 2xl:text-[28px] 3xl:text-[35px] text-white tracking-normal leading-relaxed">
+              {t("footer.disclaimer1")} <br />
+              {t("footer.disclaimer2")} <br />
+              {t("footer.disclaimer3")}
             </p>
 
-            <p className="mx-auto mt-4 mb-0 text-sm tracking-normal leading-5 text-center text-[#7FE4FF] h-[19px] w-[275px]">
+            <p className="mt-4 text-xs sm:text-sm 2xl:text-[25px] text-[#7FE4FF] font-medium w-full sm:w-auto">
               {t("footer.copyright")}
             </p>
           </div>

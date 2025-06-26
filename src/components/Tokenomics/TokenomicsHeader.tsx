@@ -6,7 +6,7 @@ interface TokenomicsHeaderProps {
 
 export const TokenomicsHeader: React.FC<TokenomicsHeaderProps> = ({ title }) => {
   return (
-    <header className="z-10 self-start mt-4 md:mt-8 2xl:mt-[131px] ml-4 text-lg sm:text-4xl tracking-wider text-[#7FE4FF] text-center max-md:max-w-full 2xl:text-[66px] font-bold">
+  <header className="z-10 self-start mt-4 md:mt-8 2xl:mt-[131px] ml-4 text-lg sm:text-4xl tracking-wider text-[#7FE4FF] text-center max-md:max-w-full 2xl:text-[66px] 3xl:text-[87px] font-bold">
       {title}
     </header>
   );

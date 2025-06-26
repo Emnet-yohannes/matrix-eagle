@@ -5,8 +5,6 @@ import { TokenomicsHeader } from "./TokenomicsHeader";
 import { BasicTokenInfo } from "./BasicTokenInfo";
 import { ContractAddress } from "./ContractAddress";
 import { TokenDistribution } from "./TokenDistribution";
-import { TokenomicsImage } from "./TokenomicsImage";
-import { TotalSupply } from "./TotalSupply";
 interface TokenomicsSectionProps {
   title?: string;
   tokenName?: string;
@@ -45,14 +43,16 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
     { label: "staking", percentage: "28%" },
     { label: "contingency", percentage: "15%" },
     { label: "presale", percentage: "2%" },
-    { label: "partnersFounders", percentage: "14.49%" },
+    { label: "partnersFounders", percentage: "15%" },
   ],
 }) => {
   const { t } = useTranslation();
 
   return (
-    <main className="flex flex-col rounded-[29px] w-full items-center">
-      <div className="p-4 w-full 2xl:w-[70%]">
+    <main className="flex flex-col justify-center rounded-[29px] w-[88%] 2xl:w-full items-center 2xl:mt-[94px] px-0 md:px-10 2xl:px-[130px] ">
+      <div className=" w-full flex justify-center">
+        <div className="p-4 w-[90%]">
+
         <TokenomicsHeader title={t("tokenomics.title")} />
 
         <BasicTokenInfo
@@ -80,26 +80,9 @@ export const TokenomicsSection: React.FC<TokenomicsSectionProps> = ({
             percentage: d.percentage,
           }))}
         />
-
-        <TotalSupply
-          totalSupply={t("tokenomics.totalSupply")}
-          description={t("tokenomics.description")}
-        />
-      </div>
-
-      <div className="w-full flex justify-center">
-        <div className="w-[90%] flex flex-col items-center ">
-          <div className="relative flex ml-15 md:ml-40 2xl:ml-80">
-            {/* <div className="absolute top-[60px] inset-0 z-20 w-[40%] h-full">
-              <ThreeDNetwork />
-            </div> */}
-            <TokenomicsImage
-              src="/tokenomics_graph.svg"
-              alt={t("tokenomics.imageAlt")}
-            />
-          </div>
         </div>
       </div>
+      
     </main>
   );
 };

@@ -25,31 +25,30 @@ export default function Component() {
   ];
 
   return (
-    <div className="bg-transparent pb-4 2xl:py-16 md:py-8 px-4">
-      <div className="max-w-7xl 2xl:max-w-[86%] mx-auto">
-        <h1 className="text-xl lg:text-3xl 2xl:text-5xl font-bold text-center mb-2 md:mb-8 2xl:mb-16 text-[#7fe4ff]">
+    <div className="bg-black/26 pb-4 2xl:py-16 md:py-8 px-4 2xl:pt-[290px] 2xl:pb-[50px]  md:px-10 2xl:px-[130px]">
+      <div className="max-w-7xl 2xl:max-w-[100%] mx-auto ">
+        <h1 className="text-xl lg:text-3xl 2xl:text-[66px] 3xl:text-[87px] font-bold text-center mb-2 md:mb-8 2xl:mb-16 text-[#7fe4ff]">
           Our Values
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 2xl:gap-x-[91px]">
           {values.map((value, index) => {
             return (
-              <div className="relative p-3 ">
-                <div className="absolute top-0 right-0 bg-[#FBC100] rounded-md z-20">
-                  {/* <IconComponent className="w-8 h-8 text-white" /> */}
-                  <img src={value.image} alt="image" height={32} width={32} />
+              <div className="relative p-3 2xl:p-0 3xl:w-[550px] 3xl:h-[252px]">
+                <div className="absolute 2xl:-top-10 -top-1.5 2xl:-right-12 -right-1.5 bg-[#FBC100]  rounded-md md:rounded-xl 2xl:rounded-4xl z-20 h-[40px] w-[40px] md:h-[45px] md:w-[45px] 2xl:h-[120px] 2xl:w-[120px] ">
+                  <img src={value.image} alt="image" />
                 </div>
               <div
                 key={index}
-                className="bg-transparent/70 border border-[#7fe4ff] rounded-2xl p-2 lg:p-4 2xl:p-8 h-full 2xl:min-h-[200px] flex flex-col justify-between"
+                className="bg-linear-to-r from-[#737373]/38 to-black/38 border 3xl:border-4 border-[#7fe4ff] rounded-2xl p-2 lg:p-4 2xl:p-8 h-full 2xl:min-h-[200px] flex flex-col justify-between"
               >
                 
 
-                <div className="mt-1 2xl:mt-8">
-                  <h2 className="text-xl lg:text-2xl 2xl:text-3xl font-bold text-[#7FE4FF] mb-1 2xl:mb-4">
+                <div className="mt-1 2xl:mt-0">
+                  <h2 className="text-xl lg:text-2xl 2xl:text-[40px] 3xl:text-[60px] font-bold text-[#7FE4FF] mb-1 2xl:mb-4">
                     {value.title}
                   </h2>
-                  <p className="text-white  text-sm lg:text-sm 2xl:text-lg leading-relaxed">
+                  <p className="text-white  text-sm lg:text-sm 2xl:text-[28px] 3xl:text-[33px] leading-relaxed font-medium">
                     {value.description}
                   </p>
                 </div>

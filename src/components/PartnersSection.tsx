@@ -38,7 +38,7 @@ export const PartnersSection: React.FC = () => {
 
   return (
     <section className="relative w-full mt-[68px]">
-      <div className="text-lg lg:text-xl 2xl:text-2xl mb-[44px]  w-full text-center font-medium text-white">
+      <div className="text-lg lg:text-xl 3xl:text-2xl mb-[44px]  w-full text-center font-medium text-white">
         {t("featureIn.title")}
       </div>
 
