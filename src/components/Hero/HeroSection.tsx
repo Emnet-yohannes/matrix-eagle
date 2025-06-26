@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export const HeroSection: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative mx-auto mt-9 mb-0 w-full px-4 sm:px-[50px]  2xl:pl-[130px] 2xl:mt-0">
+    <section className=" relative mx-auto mt-9 mb-0 w-full px-4 sm:px-[50px]  2xl:pl-0 2xl:mt-0">
       {/* Title */}
       <h1
         className="

@@ -18,7 +18,7 @@ export default function Purchase() {
         className="hidden lg:flex absolute top-2 right-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] max-w-[25%] object-contain z-10 md:-top-[70px] md:-right-[70px] 2xl:-top-[100px] 2xl:-right-[100px]"
       />
       <img
-        src="/coinRight.svg"
+        src="/coinLeft.svg"
         alt="Bottom Left"
         className="hidden lg:flex absolute bottom-2 left-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] max-w-[25%] object-contain z-10 md:-bottom-[70px] md:-left-[70px] 2xl:-bottom-[100px] 2xl:-left-[100px]"
       />
@@ -41,7 +41,7 @@ export default function Purchase() {
           </div>
 
           {/* Progress Bar */}
-          <div className="relative rounded-xl mb-4 md:mb-6 border border-[#7fe4ff] 2xl:border-2 h-6 2xl:h-[84px]">
+          <div className="relative rounded-xl mb-4 md:mb-6 border bg-[#73737361] border-[#7fe4ff] 2xl:border-2 h-6 2xl:h-[84px]">
             <div
               className="bg-[#7fe4ff] h-full rounded-l-xl rounded-r-sm transition-all duration-500 ease-out"
               style={{ width: `${progress}%` }}

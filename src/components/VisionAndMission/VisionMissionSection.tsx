@@ -5,7 +5,7 @@ export default function VisionMissionSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-black/26 p-4 md:p-4 md:mt-8 2xl:mt-[280px] px-0 md:px-10 3xl:px-[130px] 2xl:px-[60px]">
+    <div className="bg-black/26 p-4 md:p-4 md:mt-8 2xl:mt-[280px] px-0 md:px-10 3xl:px-[130px] 2xl:px-[110px]">
       <div className="max-w-7xl 2xl:max-w-[100%] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Vision and Mission content */}
