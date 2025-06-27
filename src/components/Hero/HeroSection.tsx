@@ -16,7 +16,7 @@ export const HeroSection: React.FC = () => {
           text-left text-white
           -tracking-[5%]
           /* 3xl overrides 2xl if present */
-          3xl:text-[87px]
+          3xl:text-[77px]
         "
       >
         {t("hero.title")} <span className="text-[#7FE4FF]">{t("hero.titleSpan")}</span>

@@ -4,7 +4,7 @@ import "./i18n";
 function App() {
   return (
     <div className=" bg-[url('/matrix_bg.svg')] bg-contain min-w-screen">
-      <div className="scale-[0.999] relative z-10 text-white flex items-center justify-center h-full bg-black/26">
+      <div className="relative z-10 text-white flex items-center justify-center h-full bg-black/26">
         <MatrixEagleLanding />
       </div>
     </div>

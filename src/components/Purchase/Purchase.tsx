@@ -15,12 +15,12 @@ export default function Purchase() {
       <img
         src="/coinRight.svg"
         alt="Top Right"
-        className="hidden lg:flex absolute top-2 right-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] max-w-[25%] object-contain z-10 md:-top-[70px] md:-right-[70px] 2xl:-top-[100px] 2xl:-right-[100px]"
+        className="hidden lg:flex absolute top-2 right-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] 3xl:w-[350px] max-w-[25%] object-contain z-10 md:-top-[70px] md:-right-[70px] 2xl:-top-[100px] 2xl:-right-[100px]"
       />
       <img
         src="/coinLeft.svg"
         alt="Bottom Left"
-        className="hidden lg:flex absolute bottom-2 left-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] max-w-[25%] object-contain z-10 md:-bottom-[70px] md:-left-[70px] 2xl:-bottom-[100px] 2xl:-left-[100px]"
+        className="hidden lg:flex absolute bottom-2 left-2 w-[50px] sm:w-[80px] md:w-[140px] 2xl:w-[200px] 3xl:w-[350px]  max-w-[25%] object-contain z-10 md:-bottom-[70px] md:-left-[70px] 2xl:-bottom-[100px] 2xl:-left-[100px]"
       />
 
       <div className="relative flex items-center justify-center w-full">
