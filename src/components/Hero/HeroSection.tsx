@@ -9,9 +9,9 @@ export const HeroSection: React.FC = () => {
       {/* Title */}
       <h1
         className="
-          mt-0 mb-2 lg:mb-11 w-full
-          text-3xl
-          2xl:text-[66px] 2xl:leading-[108px]
+          mt-0 mb-2 xl:mb-4 lg:mb-11 w-full
+          text-3xl xl:text-[35px]
+          2xl:text-[50px] 2xl:leading-[68px]
           font-semibold
           text-left text-white
           -tracking-[5%]
@@ -19,20 +19,21 @@ export const HeroSection: React.FC = () => {
           3xl:text-[77px]
         "
       >
-        {t("hero.title")} <span className="text-[#7FE4FF]">{t("hero.titleSpan")}</span>
+        {t("hero.title")} <span className="text-[#FFEB31]">{t("hero.titleSpan")}</span>
       </h1>
 
       {/* Description paragraph 1 */}
       <p
         className="
-          mt-0 mb-2 leading-normal tracking-normal w-full
+          mt-0 mb-2 xl:mb-4 leading-normal tracking-normal w-full
           text-base text-left text-white
           max-md:text-sm max-sm:text-sm
-          2xl:text-[32px]
+          xl:text-[18px]
+          2xl:text-[29px]
           /* 3xl will override 2xl */
           3xl:text-[42px]
           font-light
-          lg:mb-[44px] lg:leading-[49px]
+          lg:mb-[44px] lg:leading-[49px]  xl:leading-[34px]
         "
       >
         {t("hero.description1")}
@@ -43,12 +44,13 @@ export const HeroSection: React.FC = () => {
         <p
           className="
             font-light
-            mt-0 mb-2 w-full max-w-[1192px]
+            mt-0 mb-2 xl:mb-4 w-full max-w-[1192px]
             text-base text-left text-white tracking-normal
             max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5
-            2xl:text-[32px]
+            xl:text-[18px]
+            2xl:text-[29px]
             3xl:text-[42px]
-            lg:mb-7 3xl:mb-8
+            lg:mb-7 3xl:mb-8 xl:leading-[34px]
           "
         >
           {t("hero.description2")}
@@ -63,9 +65,10 @@ export const HeroSection: React.FC = () => {
             mt-0 mb-7 w-full max-w-[1192px]
             text-base text-left text-white tracking-normal
             max-md:text-sm max-md:leading-5 max-sm:text-sm max-sm:leading-5
-            2xl:text-[32px]
+            xl:text-[18px]
+            2xl:text-[29px]
             3xl:text-[42px]
-            3xl:mb-8
+            3xl:mb-8 xl:leading-[34px]
           "
         >
           {t("hero.description3")}
@@ -74,7 +77,7 @@ export const HeroSection: React.FC = () => {
 
       {/* Join call to action */}
       <div className="flex justify-start mb-7">
-        <h2 className="text-xl font-bold text-[#7FE4FF] 2xl:text-[39px] 3xl:text-[51px]">
+        <h2 className="text-xl font-bold text-[#FFEB31] xl:text-[18px] 2xl:text-[32px] 3xl:text-[51px]">
           {t("hero.joinCall")}
         </h2>
       </div>

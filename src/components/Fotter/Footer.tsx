@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
               <a
                 key={label}
                 href={href}
-                className="text-xs sm:text-sm 2xl:text-[26px] 3xl:text-[32px] font-bold text-white hover:text-white/70 transition-colors"
+                className="text-xs sm:text-sm xl:text-[20px] 2xl:text-[26px] 3xl:text-[32px] font-bold text-[#FFEB31] hover:text-[#FFEB31]/70 transition-colors"
               >
                 {label}
               </a>
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               {t("footer.disclaimer3")}
             </p>
 
-            <p className="mt-4 text-xs sm:text-sm 2xl:text-[25px] text-[#7FE4FF] font-medium w-full sm:w-auto">
+            <p className="mt-4 text-xs sm:text-sm 2xl:text-[25px] text-[#FFEB31] font-medium w-full sm:w-auto">
               {t("footer.copyright")}
             </p>
           </div>

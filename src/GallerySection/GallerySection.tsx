@@ -15,17 +15,17 @@ export default function GallerySection() {
   const bottomRowImages = galleryImages.slice(7);
 
   return (
-    <section className="bg-transparent py-10 sm:py-16 px-4 sm:px-6 2xl:pt-[149px]">
-      <div className="max-w-7xl 2xl:max-w-full mx-auto">
+    <section className="bg-transparent py-10 sm:py-16 px-4 sm:px-6 2xl:pt-[60px] 3xl:pt-[149px]">
+      <div className="max-w-7xl xl:max-w-full mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2
-            className="text-2xl sm:text-4xl md:text-5xl 2xl:text-[66px] 3xl:text-[87px] font-bold mb-4 sm:mb-6 2xl:mb-8"
-            style={{ color: "#7fe4ff" }}
+            className="text-2xl sm:text-4xl md:text-5xl xl:text-[40px] 2xl:text-[56px] 3xl:text-[87px] font-bold mb-4 sm:mb-6 2xl:mb-8"
+            style={{ color: "#FFEB31" }}
           >
             {t("gallery.title")}
           </h2>
-          <p className="text-sm sm:text-lg md:text-xl 2xl:text-[30px] 3xl:text-[40px] font-medium max-w-[90vw] sm:max-w-4xl 2xl:max-w-[80%] mx-auto leading-relaxed">
+          <p className="text-sm sm:text-lg md:text-xl xl:text-[16px] 2xl:text-[24px] 3xl:text-[40px] font-medium max-w-[90vw] sm:max-w-4xl 2xl:max-w-[80%] mx-auto leading-relaxed">
             {t("gallery.description")}
           </p>
         </div>

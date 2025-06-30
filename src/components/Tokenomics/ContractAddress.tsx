@@ -23,14 +23,14 @@ export const ContractAddress: React.FC<ContractAddressProps> = ({
   };
 
   return (
-    <section className="flex flex-col justify-center items-center  py-3 2xl:py-12  mt-8 2xl:mt-19 w-full text-center border lg:border-2 2xl:border-4 border-[#7FE4FF] border-solid rounded-[29px] max-md:px-5 max-md:mt-10 max-md:max-w-full bg-linear-to-r from-[#737373]/38 to-black/38">
+    <section className="flex flex-col justify-center items-center  py-3 2xl:py-12  mt-8 2xl:mt-19 w-full text-center border lg:border-2 2xl:border-4 border-[#00D962] border-solid rounded-[29px] max-md:px-5 max-md:mt-10 max-md:max-w-full bg-linear-to-r from-[#737373]/38 to-black/38">
       <div className="2xl:py-6 flex flex-col w-full max-md:max-w-full">
-        <div className="flex justify-center flex-wrap gap-3.5 items-start text-xs sm:text-sm 2xl:text-[50px] tracking-wide text-white">
-          <div className="self-stretch my-auto font-bold ">
+        <div className="flex justify-center items-center flex-wrap gap-3.5 text-xs sm:text-sm 2xl:text-[36px] tracking-wide text-white">
+          <div className="flex items-center  self-stretch my-auto font-bold ">
             {t("contractAddress.title")}
           </div>
           <div className="flex items-center w-full md:w-auto">
-            <div className="w-[90%] md:w-auto overflow-hidden text-ellipsis whitespace-nowrap grow shrink max-md:max-w-full text-sm sm:text-sm 2xl:text-[38px] 3xl:text-[50px] font-normal">
+            <div className="flex items-center mt-2 w-[90%] md:w-auto overflow-hidden text-ellipsis whitespace-nowrap grow shrink max-md:max-w-full text-sm sm:text-sm 2xl:text-[30px] 3xl:text-[50px] font-normal">
               {address}
             </div>
             {copied ? (
@@ -45,7 +45,7 @@ export const ContractAddress: React.FC<ContractAddressProps> = ({
             )}
           </div>
         </div>
-        <p className="self-center mt-3.5 text-xs sm:text-xs 2xl:text-[25px] tracking-normal text-yellow-500 max-md:max-w-full">
+        <p className="self-center mt-3.5 text-xs sm:text-xs 2xl:w-[70%] 2xl:text-[20px] tracking-normal text-yellow-500 max-md:max-w-full">
           {t(warningText)}
         </p>
       </div>

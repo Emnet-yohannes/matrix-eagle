@@ -29,14 +29,14 @@ export default function TeamAndAdvisors() {
     {
       name: t("team.members.jose.name"),
       title: t("team.members.jose.title"),
-      image: "/teamMemberImages/foodEngineer.png",
+      image: "/teamMemberImages/foodEngineer_cropped.png",
       twitter: "#",
       linkedin: "#",
     },
     {
       name: t("team.members.aryan.name"),
       title: t("team.members.aryan.title"),
-      image: "/teamMemberImages/projectManager.png",
+      image: "/teamMemberImages/projectManagerImage.png",
       twitter: "#",
       linkedin: "#",
     },
@@ -50,17 +50,18 @@ export default function TeamAndAdvisors() {
   ];
 
   return (
-    <div className="bg-transparent px-6 sm:px-10 md:px-8 lg:px-12 py-8 sm:py-16 md:py-20 2xl:pt-[141px]">
+    <div className=" bg-transparent px-6 sm:px-10 md:px-8 lg:px-12 py-8 sm:py-16 md:py-20 2xl:pt-[141px]">
       <div className="max-w-7xl 2xl:max-w-[78%] 3xl:max-w-[88%] mx-auto">
-        <h1 className="text-[#7fe4ff] text-center text-xl sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-[66px] 3xl:text-[87px] font-bold mb-10 sm:mb-16">
+        <h1 className="text-[#FFEB31] text-center text-xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-[40px] 2xl:text-[56px] 3xl:text-[87px] font-bold mb-10 sm:mb-16">
           {t("team.title")}
         </h1>
+        <div className="flex justify-center">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-10 md:gap-12 2xl:gap-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-10 md:gap-12 2xl:gap-14 xl:w-[80%] w-auto 2xl:w-auto">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-transparent w-full">
-              <div className="w-full max-w-full 2xl:w-[488px] 3xl:w-[650px] mx-auto">
-                <div className="relative mb-4 border border-[#7FE4FF] md:border-2 2xl:border-4 bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 rounded-xl sm:rounded-2xl overflow-hidden aspect-[311/286]">
+              <div className="w-full max-w-full xl:w-[300px] 2xl:w-[488px] 3xl:w-[650px] mx-auto">
+                <div className="relative mb-4 border border-[#00D962] md:border-2 2xl:border-4 bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 rounded-xl sm:rounded-2xl overflow-hidden aspect-[311/286]">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -70,14 +71,14 @@ export default function TeamAndAdvisors() {
 
                 <div className="flex justify-between items-start gap-3 sm:gap-4 mt-4 sm:mt-5">
                   <div className="space-y-1 sm:space-y-2">
-                    <h3 className="text-[#7fe4ff] text-sm sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[47px] 3xl:text-[62px] font-semibold leading-tight">
+                    <h3 className="text-[#FFEB31] text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-[23px] 2xl:text-[40px] 3xl:text-[62px] font-semibold leading-tight">
                       {member.name}
                     </h3>
-                    <p className="text-white text-xs sm:text-base md:text-lg 2xl:text-[27px] 3xl:text-[35px] font-medium leading-relaxed max-w-[240px] sm:max-w-[280px] md:max-w-full">
+                    <p className="text-white text-xs sm:text-base md:text-lg xl:text-[16px] 2xl:text-[23px] 3xl:text-[35px] font-medium leading-relaxed max-w-[240px] sm:max-w-[280px] md:max-w-full">
                       {index === 0 && member.title.includes(" at ") ? (
                         <>
                           {member.title.split(" at ")[0]}{" "}
-                          <span className="text-[#7fe4ff]">Matrix Eagle</span>
+                          <span className="text-[#FFEB31]">Matrix Eagle</span>
                         </>
                       ) : (
                         member.title
@@ -88,7 +89,7 @@ export default function TeamAndAdvisors() {
                   <div className="flex gap-2 mt-1 2xl:mt-5 items-center">
                     <a
                       href={member.twitter}
-                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
+                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#FFEB31] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
                     >
                       <svg
                         className="w-3 h-3 sm:w-4 sm:h-4 text-black"
@@ -100,7 +101,7 @@ export default function TeamAndAdvisors() {
                     </a>
                     <a
                       href={member.linkedin}
-                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#7fe4ff] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
+                      className="w-6 h-6 sm:w-8 sm:h-8 2xl:w-[33px] 3xl:w-[43px] 2xl:h-[33px] 3xl:h-[43px] bg-[#FFEB31] rounded flex items-center justify-center hover:opacity-80 transition-opacity"
                     >
                       <svg
                         className="w-3 h-3 sm:w-4 sm:h-4 text-black"
@@ -115,6 +116,7 @@ export default function TeamAndAdvisors() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

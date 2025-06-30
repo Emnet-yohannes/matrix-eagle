@@ -15,10 +15,10 @@ const TrustedParteners = () => {
   return (
     <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8 2xl:mt-30 ">
       <div className="w-full md:max-w-7xl 2xl:max-w-[86%]">
-        <div className="text-center text-white font-bold tracking-wider mb-12">
-          <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-4xl  2xl:text-[36px] 3xl:text-6xl">
+        <div className="text-center text-[#FFEB31] font-bold tracking-wider mb-12">
+          <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-4xl  2xl:text-[39px] 3xl:text-6xl">
             {t("trustedPartners.titlePart1")}{" "}
-            <span className="text-[#7fe4ff]">{t("trustedPartners.titlePart2")}</span>
+            <span className="text-[#FFEB31]">{t("trustedPartners.titlePart2")}</span>
           </h2>
         </div>
 
@@ -26,7 +26,7 @@ const TrustedParteners = () => {
           {TrustedParteners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center border border-[#7FE4FF] rounded-xl 2xl:rounded-4xl 2xl:border-4 bg-linear-to-r from-black/40 to-[#737373]/20 h-16 sm:h-20 md:h-24 2xl:h-[180px] transition-all duration-300"
+              className="flex items-center justify-center border border-[#00D962] rounded-xl 2xl:rounded-4xl 2xl:border-4 bg-linear-to-r from-black/40 to-[#737373]/20 h-16 sm:h-20 md:h-24 2xl:h-[180px] transition-all duration-300"
             >
               <img
                 src={partner}

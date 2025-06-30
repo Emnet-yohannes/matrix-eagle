@@ -54,9 +54,9 @@ export const PresaleWidget: React.FC<PresaleWidgetProps> = ({
 
   return (
     <div className="max-md:px-3 mb-7 3xl:mb-10">
-      <div className="w-full border border-[#7FE4FF] bg-transparent rounded-2xl p-6 md:py-10 md:px-12">
+      <div className="w-full border border-[#00D962] bg-transparent rounded-2xl p-6 md:py-10 md:px-12">
           <div className="text-center mb-6">
-            <h2 className="text-xl 3xl:not-[]:text-4xl font-bold tracking-wide text-[#7FE4FF] max-md:text-3xl">
+            <h2 className="text-xl 3xl:not-[]:text-4xl font-bold tracking-wide text-[#FFEB31] max-md:text-3xl">
               {t("Presale.buy")}
               <span className="text-[#FFA100]">{tokenSymbol}</span>{" "}
               {t("Presale.now")}

@@ -25,13 +25,13 @@ export default function LanguageSelector() {
     <div className="h-full relative text-left mt-2 ">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#1C1C2E] to-[#2A2B3E] border border-gray-600 rounded-md text-white "
+        className="flex items-center gap-2 pl-3 pr-8 py-1 bg-gradient-to-r from-[#1C1C2E] to-[#2A2B3E] border border-gray-600 rounded-md text-white "
       >
         <img src={selected.flag} alt={selected.label} className="w-5 h-5" />
-        <span className="text-sm 2xl:text-[32px] 3xl:text-[32px] font-bold ">
+        <span className="text-sm 2xl:text-[20px] 3xl:text-[26px] font-bold ">
           {selected.label}
         </span>
-        <div className="3xl:w-[40px] 3xl:h-[40px] ">
+        <div className="w-[20px] h-[20px] 3xl:w-[40px] 3xl:h-[40px] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-[100%} h-[100%] ml-1"
@@ -59,7 +59,7 @@ export default function LanguageSelector() {
                 switchLanguage(lang.code);
                 setOpen(false);
               }}
-              className="w-full flex items-center gap-2 px-3 py-2 hover:bg-[#33344A] text-white text-sm 2xl:text-[24px] 3xl:text-[32px] font-bold "
+              className="w-full flex items-center gap-2 px-3 py-2 hover:bg-[#33344A] text-white text-sm 2xl:text-[20px] 3xl:text-[26px] font-bold "
             >
               <img src={lang.flag} alt={lang.label} className="w-5 h-5" />
               {lang.label}
