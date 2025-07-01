@@ -17,27 +17,27 @@ export const BasicTokenInfo: React.FC<BasicTokenInfoProps> = ({
 }) => {
   const { t } = useTranslation();
 
+  const tokenInfo = [
+    { label: t("tokenInfo.name"), value: name },
+    { label: t("tokenInfo.symbol"), value: symbol },
+    { label: t("tokenInfo.decimal"), value: decimal },
+    { label: t("tokenInfo.tokens"), value: totalTokens },
+  ];
+
   return (
-    <section className="mt-8 2xl:mt-20 py-3 2xl:py-12 w-full border lg:border-2 2xl:border-4 border-[#00D962] border-solid rounded-[29px] max-md:mt-10 max-md:max-w-full bg-linear-to-r from-[#737373]/38 to-black/38">
-      <div className="flex gap-x-5 max-md:flex-col">
-        <div className="w-[68%] max-md:ml-0 max-md:w-full">
-          <div className="md:py-3 max-md:flex-col flex items-center flex-wrap grow text-xs sm:text-sm 2xl:text-[28px] 3xl:text-[50px] font-semibold tracking-wide text-center text-white max-md:max-w-full">
-            <div className="flex h-full items-center 2xl:h-[80px] md:border-r-[4px] border-r-[#00D962] grow shrink-0 px-16 basis-0 w-fit max-md:px-5 max-md:max-w-full">
-              {t("tokenInfo.name")}: {name}
-            </div>
-            <div className="md:border-r-[4px] 2xl:h-[80px] flex items-center border-r-[#00D962] grow shrink-0 px-16 basis-0 w-fit max-md:px-5">
-              {t("tokenInfo.symbol")}: {symbol}
-            </div>
-            <div className="md:border-r-[4px] 2xl:h-[80px] flex items-center border-r-[#00D962] grow shrink-0 px-16 basis-0 w-fit max-md:px-5">
-              {t("tokenInfo.decimal")}: {decimal}
+    <section className="w-full mt-10 2xl:mt-20 rounded-3xl 3xl:border-4 2xl:border-2 border border-[#00D962] bg-gradient-to-r from-[#737373]/40 to-black/40 p-6 sm:p-10 2xl:p-13 3xl:p-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {tokenInfo.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center text-center border-r 2xl:border-r-2 3xl:border-r-4 border-[#00D962] last:border-none"
+          >
+            <div className="text-sm sm:text-base 2xl:text-2xl 3xl:text-4xl font-semibold text-white">
+              {item.label}:{" "}
+              <span className="text-white/90 font-medium">{item.value}</span>
             </div>
           </div>
-        </div>
-        <div className="ml-5 w-[32%] max-md:ml-0 max-md:w-full flex items-center justify-center">
-          <div className="text-xs sm:text-sm 2xl:text-[28px] 3xl:text-[50px] font-bold tracking-wide text-center text-white">
-            {t("tokenInfo.tokens")}: {totalTokens}
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

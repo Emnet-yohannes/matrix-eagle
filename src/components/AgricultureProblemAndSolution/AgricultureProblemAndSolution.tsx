@@ -5,64 +5,83 @@ export default function AgricultureProblemAndSolution() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-transparent px-4 py-6 sm:p-8 2xl:mt-[60px] 2xl:pb-[100px] 3xl:mt-[100px] 3xl:pb-[200px]">
-      <div className="max-w-4xl 2xl:max-w-[80%] mx-auto space-y-6 sm:space-y-[28px]">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-[40px] 2xl:text-[56px] 3xl:text-[76px] font-extrabold text-center text-[#FFEB31]">
+    <div className="bg-transparent px-4 py-10 sm:px-8 sm:py-16 2xl:py-28 ">
+      <div className="px-[50px] md:px-[100px] 2xl:px-[130px] mx-auto space-y-10 sm:space-y-10 ">
+        {/* Title */}
+        <h1 className="text-center text-[#FFEB31] text-3xl sm:text-5xl 2xl:text-[54px] 3xl:text-7xl font-extrabold leading-tight">
           {t("agriculture.title")}
         </h1>
-        <h2 className="text-lg sm:text-2xl md:text-3xl xl:text-[25px] 2xl:text-[30px] 3xl:text-[46px] font-semibold text-center text-white">
+
+        {/* Subtitle */}
+        <h2 className="text-center text-white text-lg sm:text-2xl 2xl:text-[32px] 3xl:text-4xl font-semibold">
           {t("agriculture.subtitle")}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 2xl:gap-x-[165px] 2xl:mt-[43px]">
-          <div className="bg-linear-to-r from-[#737373]/38 to-black/38 rounded-2xl sm:rounded-3xl border border-[#FFEB31] lg:border-2 3xl:border-4 p-4 sm:p-8 text-center">
-            <p className="text-white text-sm sm:text-lg 2xl:text-[28px] 3xl:text-[34px] font-medium">
-              {t("agriculture.problems.0")}
-            </p>
-          </div>
-          <div className="bg-linear-to-r from-[#737373]/38 to-black/38 rounded-2xl sm:rounded-3xl border border-[#FFEB31] lg:border-2 3xl:border-4 p-4 sm:p-8 text-center">
-            <p className="text-white text-sm sm:text-lg 2xl:text-[28px] 3xl:text-[34px] font-medium">
-              {t("agriculture.problems.1")}
-            </p>
-          </div>
+        {/* Problems */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 2xl:gap-x-20 mt-6 2xl:mt-8 px-[70px]">
+          {[0, 1].map((i) => (
+            <div
+              key={i}
+              className="bg-gradient-to-r from-[#737373]/40 to-black/40 3xl:border-4 2xl:border-2 border border-[#00D962] rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-5 text-center"
+            >
+              <p className="text-white text-base sm:text-lg 2xl:text-2xl 3xl:text-3xl font-medium">
+                {t(`agriculture.problems.${i}`)}
+              </p>
+            </div>
+          ))}
         </div>
 
-        <div className="2xl:mt-[70px] bg-linear-to-r from-[#737373]/38 to-black/38 rounded-2xl sm:rounded-3xl p-4 sm:p-8 2xl:py-12 text-center border border-[#00D962] lg:border-2 2xl:border-4">
-          <p className="text-white text-sm sm:text-lg 2xl:text-[23px] 3xl:text-[40px] font-medium">
+        {/* Additional Problem */}
+        <div className="bg-gradient-to-r from-[#737373]/40 to-black/40 3xl:border-4 2xl:border-2 border border-[#00D962] rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-9 text-center 2xl:mx-[70px]">
+          <p className="text-white text-base sm:text-lg 2xl:text-2xl 3xl:text-3xl font-medium">
             {t("agriculture.problems.2")}
           </p>
         </div>
 
-        <h2 className="2xl:mt-[81px] text-xl sm:text-2xl md:text-3xl xl:text-[35px] 2xl:text-[47px] 3xl:text-[76px] font-extrabold text-center text-[#FFEB31]">
+        {/* Solution Title */}
+        <h2 className="text-center text-[#FFEB31] text-2xl sm:text-4xl 2xl:text-[50px] 3xl:text-6xl font-extrabold">
           {t("agriculture.solution.title")}
         </h2>
 
-        <h3 className="text-white text-sm sm:text-lg 2xl:text-[30px] 3xl:text-[46px] font-medium">
+        {/* Solution Subtitle */}
+        <div className="flex justify-center">
+
+        <h3 className="text-center text-white text-base sm:text-xl 2xl:text-2xl 3xl:text-3xl font-medium 2xl:w-[60%]">
           {t("agriculture.solution.subtitle")}
         </h3>
-        <h3 className="2xl:mt-[70px] text-base sm:text-2xl md:text-3xl 2xl:text-[36px] 3xl:text-[56px] font-semibold text-center text-[#FFEB31]">
+        </div>
+
+        {/* Solution Highlight */}
+        <h3 className="text-center text-[#FFEB31] text-xl sm:text-3xl 2xl:text-4xl 3xl:text-5xl font-semibold mt-10">
           {t("agriculture.solution.highlight")}
         </h3>
 
-        <div className="space-y-4 sm:space-y-6 2xl:space-y-[71px] 2xl:mt-[70px]">
-          {["0", "1", "2"].map((i) => (
+        {/* Solution Points */}
+        <div className="space-y-6 2xl:space-y-12 px-[70px]">
+          {[0, 1, 2].map((i) => (
             <div
               key={i}
-              className="bg-linear-to-r from-[#737373]/38 to-black/38 rounded-2xl sm:rounded-3xl p-4 sm:p-8 2xl:py-12 text-center border border-[#FFEB31] lg:border-2 3xl:border-4"
+              className="bg-gradient-to-r from-[#737373]/40 to-black/40 3xl:border-4 2xl:border-2 border border-[#00D962] rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-9 text-center"
             >
-              <p className="text-white text-sm sm:text-lg 2xl:text-[28px] 3xl:text-[40px] font-medium">
+              <p className="text-white text-base sm:text-lg 2xl:text-2xl 3xl:text-3xl font-medium">
                 {t(`agriculture.solution.points.${i}`)}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="2xl:mt-[68px] text-base sm:text-2xl md:text-3xl xl:text-[28px] 2xl:text-[32px] 3xl:text-[56px] font-semibold text-center leading-relaxed text-[#FFEB31]">
+        {/* Closing Paragraph */}
+        <div className="flex justify-center 2xl:px-[130px]">
+
+        <p className="text-center text-[#FFEB31] text-lg sm:text-2xl 2xl:text-[34px] 3xl:text-4xl font-semibold leading-relaxed mt-10 2xl:mt-16 ">
           {t("agriculture.closing")}
         </p>
+        </div>
 
-        <div className="2xl:mt-[92px] flex justify-center pt-4">
-          <button className="bg-[#00D962] hover:bg-[#00D962]/70 text-black font-bold text-sm sm:text-base md:text-lg 2xl:text-[30px] 3xl:text-[50px] px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl transition-colors duration-200 border border-[#38B6FF]">
+        {/* CTA Button */}
+        <div className="flex justify-center mt-10 2xl:mt-20">
+          <button className="bg-[#00D962] hover:bg-[#00D962]/80 text-black font-bold text-base sm:text-lg 2xl:text-[26px] 3xl:text-3xl px-6 sm:px-10 py-3 sm:py-4 rounded-xl transition duration-200 3xl:border-4 2xl:border-2 border border-[#FFEB31]">
             {t("agriculture.cta")}
           </button>
         </div>

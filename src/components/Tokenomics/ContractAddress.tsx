@@ -23,29 +23,32 @@ export const ContractAddress: React.FC<ContractAddressProps> = ({
   };
 
   return (
-    <section className="flex flex-col justify-center items-center  py-3 2xl:py-12  mt-8 2xl:mt-19 w-full text-center border lg:border-2 2xl:border-4 border-[#00D962] border-solid rounded-[29px] max-md:px-5 max-md:mt-10 max-md:max-w-full bg-linear-to-r from-[#737373]/38 to-black/38">
-      <div className="2xl:py-6 flex flex-col w-full max-md:max-w-full">
-        <div className="flex justify-center items-center flex-wrap gap-3.5 text-xs sm:text-sm 2xl:text-[36px] tracking-wide text-white">
-          <div className="flex items-center  self-stretch my-auto font-bold ">
+    <section className="w-full mt-10 2xl:mt-14 rounded-3xl 3xl:border-4 2xl:border-2 border border-[#00D962] bg-gradient-to-r from-[#737373]/40 to-black/40 p-6 sm:p-10 2xl:p-9 text-white text-center">
+      <div className="space-y-2">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
+          <span className="text-sm sm:text-base 2xl:text-3xl font-semibold">
             {t("contractAddress.title")}
-          </div>
-          <div className="flex items-center w-full md:w-auto">
-            <div className="flex items-center mt-2 w-[90%] md:w-auto overflow-hidden text-ellipsis whitespace-nowrap grow shrink max-md:max-w-full text-sm sm:text-sm 2xl:text-[30px] 3xl:text-[50px] font-normal">
+          </span>
+          <div className="flex items-center gap-3 w-full sm:w-auto max-w-full overflow-hidden">
+            <span className="truncate text-xs sm:text-sm 2xl:text-2xl font-medium">
               {address}
-            </div>
+            </span>
             {copied ? (
-              <p className="text-xs 2xl:text-4xl">{t("contractAddress.copied")}</p>
+              <span className="text-xs sm:text-sm 2xl:text-xl text-green-400 font-medium">
+                {t("contractAddress.copied")}
+              </span>
             ) : (
               <img
                 src={copyIconSrc}
                 alt={t("contractAddress.copyAlt")}
                 onClick={handleCopy}
-                className="ml-3 object-contain shrink-0 aspect-square w-[20px] 2xl:w-[34px] 3xl:w-[45px] cursor-pointer transition-all"
+                className="w-5 2xl:w-8 cursor-pointer hover:opacity-80 transition"
               />
             )}
           </div>
         </div>
-        <p className="self-center mt-3.5 text-xs sm:text-xs 2xl:w-[70%] 2xl:text-[20px] tracking-normal text-yellow-500 max-md:max-w-full">
+
+        <p className="text-xs sm:text-sm 2xl:text-lg text-yellow-400  mx-auto">
           {t(warningText)}
         </p>
       </div>

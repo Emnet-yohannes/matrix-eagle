@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface FAQItemProps {
   question: string;
@@ -15,24 +15,23 @@ export const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   };
 
   return (
-    <article className="flex flex-col justify-center items-start  w-full max-w-6xl 2xl:max-w-full rounded border-b 2xl:border-b-[2px] border-solid border-b-white h-auto max-sm:h-auto max-sm:min-h-[70px]">
+    <article className="w-full  mx-auto 2xl:border-b-2 3xl:border-b-4 border-b border-[#00D962] py-4 sm:py-6 2xl:py-8">
       <button
-        className="flex relative justify-between items-center pt-5 pr-4 pb-6 pl-8 w-full max-sm:p-4  text-left 2xl:space-y-[54px]"
         onClick={toggleExpanded}
         aria-expanded={isExpanded}
+        className="flex items-center justify-between w-full px-4 sm:px-6 2xl:px-0 text-left group"
       >
-        <h3 className="flex-1 text-lg lg:text-2xl 2xl:text-[40px] 3xl:text-[60px] tracking-normal leading-10 text-white max-md:text-2xl max-md:leading-9 max-sm:text-lg max-sm:leading-7 font-medium">
+        <h3 className="text-white text-base sm:text-xl 2xl:text-[36px] 3xl:text-5xl font-medium leading-snug group-hover:text-yellow-300 transition">
           {question}
         </h3>
-        <div className="flex-shrink-0 w-5 h-5 2xl:w-[44px] 2xl:h-[44px] 3xl:w-[58px] 3xl:h-[58px]">
+        <div className="w-5 h-5 sm:w-7 sm:h-7 2xl:w-10 2xl:h-10 ml-4 flex-shrink-0 transition-transform duration-300 transform group-hover:scale-110">
           <svg
-            width="100%"
-            height="100%"
             viewBox="0 0 30 31"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="faq-icon "
-            style={{ width: '100%', height: '100%' }}
+            className={`w-full h-full transition-transform duration-300 ${
+              isExpanded ? "rotate-45" : ""
+            }`}
           >
             <path
               d="M23.75 16.75H16.25V24.25H13.75V16.75H6.25V14.25H13.75V6.75H16.25V14.25H23.75V16.75Z"
@@ -41,15 +40,14 @@ export const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
           </svg>
         </div>
       </button>
-      <div>
+
       {isExpanded && answer && (
-        <div className="px-8 pb-6 text-white max-sm:px-4">
-          <p className="text-sm lg:text-lg 2xl:text-2xl max-md:text-base max-sm:text-sm">
+        <div className="px-4 sm:px-6 2xl:px-8 pt-3 sm:pt-4">
+          <p className="text-white text-sm sm:text-base 2xl:text-xl leading-relaxed">
             {answer}
           </p>
         </div>
       )}
-      </div>
     </article>
   );
 };

@@ -34,7 +34,8 @@
     "ourVisionDesc1": "Notre vision est de créer un avenir où l'investissement agricole est facile, fiable et accessible à tous. Nous utilisons la blockchain pour supprimer les obstacles et faire prospérer les communautés.",
     "ourVisionDesc2": "Nous voulons moderniser l'agriculture à travers la transparence et la rentabilité, en Colombie et au-delà.",
     "ourMission": "Notre mission",
-    "ourMissionDesc": "Notre mission est de connecter les agriculteurs aux investisseurs mondiaux via une plateforme blockchain sécurisée. Nous facilitons l'accès au financement et offrons aux investisseurs des opportunités d'impact réel.",
+    "ourMissionDesc1": "Notre mission est de connecter les agriculteurs aux investisseurs mondiaux via une plateforme blockchain sécurisée. Nous facilitons l'accès au financement et offrons aux investisseurs des opportunités d'impact réel.",
+    "ourMissionDesc2":"En même temps, nous offrons aux investisseurs un moyen de générer des revenus tout en ayant un véritable impact. En combinant la technologie aux besoins réels de l’agriculture, nous aidons les deux parties à réussir et à construire des communautés plus solides et durables.",
     "altVisionImage": "Trois agriculteurs debout ensemble dans un cadre agricole verdoyant"
   },
   "values": {

@@ -45,7 +45,7 @@ export default function ContactForm() {
             placeholder={t("contact.namePlaceholder")}
             value={formData.name}
             onChange={handleInputChange}
-            className="w-full h-12 sm:h-14 md:h-16 2xl:h-auto px-5 sm:px-6 md:px-8 2xl:py-12 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-4 border-[#00D962] rounded-3xl focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
+            className="w-full h-12 sm:h-14 md:h-16 2xl:h-auto px-5 sm:px-6 md:px-8 2xl:py-9 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-2 3xl:border-4 border-[#00D962] rounded-3xl focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
           />
 
           <input
@@ -54,7 +54,7 @@ export default function ContactForm() {
             placeholder={t("contact.emailPlaceholder")}
             value={formData.email}
             onChange={handleInputChange}
-            className="w-full h-12 sm:h-14 md:h-16 2xl:h-auto px-5 sm:px-6 md:px-8 2xl:py-12 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-4 border-[#00D962] rounded-3xl focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
+            className="w-full h-12 sm:h-14 md:h-16 2xl:h-auto px-5 sm:px-6 md:px-8 2xl:py-12 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-2 3xl:border-4 border-[#00D962] rounded-3xl focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
           />
 
           <textarea
@@ -63,7 +63,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleInputChange}
             rows={8}
-            className="w-full px-5 sm:px-6 md:px-8 py-5 sm:py-6 md:py-8 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-4 border-[#00D962] rounded-3xl resize-none focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
+            className="w-full px-5 sm:px-6 md:px-8 py-5 sm:py-6 md:py-8 text-white placeholder-white text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-[30px] 3xl:text-[50px] font-semibold bg-gradient-to-r from-[#737373]/30 to-[#000000]/70 border-2 2xl:border-2 3xl:border-4 border-[#00D962] rounded-3xl resize-none focus:outline-none focus:ring-2 focus:ring-[#00D962] transition"
           />
 
           <div className="flex justify-center pt-4 sm:pt-6 2xl:mt-[48px]">
